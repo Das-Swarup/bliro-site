@@ -203,8 +203,10 @@ border-radius: 5px;
   text-align: justify center;
 }
 
-.feature img{
-  width: 90%;
+.slide{
+  margin-left: 2.3rem;
+  width: 80%;
+  
 }
 
 .feature-desc {
@@ -273,3 +275,18 @@ table tr td{
   flex-direction: column;
   justify-content: center;
 }
+
+.privacy-container, .privacy-container-de{
+  margin-top: 5.25rem;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  text-align: justify center;
+  align-items: center;
+  justify-content: center;
+}
+
+.privacy-container-de, .privacy-container h2 {
+  
+  font-family: Avenir-bold;
+}
+
