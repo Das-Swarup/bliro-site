@@ -50,7 +50,7 @@ h1 {
   text-align: center;
 }
 
-.home-text h1 {
+.home-text h1, .sitetitle {
   margin-top: 0.625rem;
   font-size: 4rem;
   font-weight: 700;
@@ -66,6 +66,18 @@ h1 {
 .p1 {
   font-size: 1.25rem;
   text-align: justify;
+}
+
+.mainheading{
+  margin-top: 5rem;
+}
+
+.sitetitle{
+  margin-bottom: 5rem;
+}
+
+.lead{
+  margin-bottom: 2rem;
 }
 
 @media  screen and (min-width=2560px) {
@@ -289,4 +301,6 @@ table tr td{
   
   font-family: Avenir-bold;
 }
+
+.card-block{}
 
