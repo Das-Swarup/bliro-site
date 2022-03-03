@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap");
+@font-face {
+  font-family: Avenir-bold;
+  src: url(AvenirLTStd-Black.otf);
+}
+@font-face {
+  font-family: Avenir-light;
+  src: url(AvenirLTStd-Book.otf);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Avenir-light;
+}
+
+html text{
+  color: #161E31;
+}
+
+html a {
+  color: #262626;
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+  margin-top: 0.5rem;
+}
+
+.logo {
+  margin-top: 0.5rem;
+  position: absolute;
+  left: auto;
+  right: auto;
+  top: 0.51%;
+  bottom: 97.28%;
+}
+
+.home-text {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-text p,
+h1 {
+  text-align: center;
+}
+
+.home-text h1 {
+  margin-top: 10px;
+  font-size: 64px;
+  font-weight: 700;
+  font-family: Avenir-bold;
+}
+
+.home-text p {
+  font-size: 18px;
+  max-width: 1002px;
+}
+
+.p1 {
+  font-size: 20px;
+}
+.section-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section-2 img {
+  margin-top: 100px;
+  width: 1212px;
+  height: 755.55px;
+  left: 150px;
+  top: 880px;
+  border-radius: 5px;
+}
+
+.demo-video {
+  width: 90%;
+  margin: 100px 0 100px 0;
+}
+
+.primary-button {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  color: aliceblue;
+  font-size: 20px;
+  width: 250px;
+  height: 60px;
+
+  /* Bliro Orange */
+
+  background: #d14900;
+  border-radius: 5px;
+  box-shadow: none;
+}
+.primary-button:hover {
+  cursor: pointer;
+}
+
+.secondary-button {
+  margin-bottom: 20px;
+  color: aliceblue;
+  font-size: 18px;
+  width: 265px;
+  height: 55px;
+
+  /* Bliro Orange */
+
+  background: #d14900;
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+.secondary-button:hover {
+  cursor: pointer;
+  color: black;
+  /* White */
+
+background: #FFFEFD;
+/* Bliro Orange */
+
+border: 3px solid #D14900;
+box-sizing: border-box;
+border-radius: 5px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 25%;
+  margin: auto;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.slide {
+  margin-top: 80px;
+  vertical-align: middle;
+  width: 80%;
+}
+
+.feature-container {
+  margin-top: 250px;
+}
+
+.feature-container h1 {
+  font-family: Avenir-bold;
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-gap: 1rem;
+  margin-top: 100px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.feature-desc {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+}
+
+.feature-image {
+  min-width: 50%;
+  max-width: 50%;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+.end-element {
+  margin: 0 0 94px 94px;
+  font-size: 20px;
+}
+
+.pricing-table{
+  margin-top: 80px;
+}
+
+table tr td{
+  padding:20px ;
+}
+
+.price{
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.bliro-feature{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: justify;
+  
+}
+
+.faq-header{
+  font-family: Avenir-bold;
+  margin-top: 250px;
+  margin-bottom: 80px;
+  font-size: 64px;
+}
+
+.question{
+  font-family: Avenir-bold;
+}
+
+.faq-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  align-items: center;
+  justify-content: center;
+} 
+
+.faq{
+  top: 0;
+  margin:0 2rem 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
