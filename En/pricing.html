@@ -30,6 +30,10 @@
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- Calendly link widget begin -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <!-- Calendly link widget end -->
     <script src="./contact_form.js"></script>
     <script src="./main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
@@ -44,7 +48,8 @@
     <div class="container">
 
         <div id="header" class="header">
-            <a href="../index.html"><img class="logo" src="../img/bliro_logo_large.svg" alt="" width="100" height="100"></a>
+            <a href="../index.html"><img class="logo" src="../img/bliro_logo_large.svg" alt="" width="100"
+                    height="100"></a>
             <nav class="navbar navbar-expand-sm navbar-light justify-content-end">
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -82,17 +87,19 @@
                             </div>
                         </li>
                         <a style="font-weight: 700;color:#161E31;font-family: Avenir-bold;font-size: 1.5rem;margin-top: 1rem;"
-                            class="nav-link" href="#"><button type="button" class="nav-button">Download Bliro</button></a>
+                            class="nav-link" href="#"><button type="button" class="nav-button">Download
+                                Bliro</button></a>
                     </ul>
                 </div>
             </nav>
         </div>
 
         <div class="home-text">
+
             <h1>Pricing</h1>
             <br></br>
             <h4>Start with Bliro for free</h4>
-            <p class="p1">No Credit Card required. Setup takes under two minutes.</p>
+            <p style="color: grey;" class="p1">No Credit Card required. Setup takes under two minutes.</p>
         </div>
 
         <div class="pricing-table">
@@ -103,10 +110,13 @@
                             <p><br></p>
                         </td>
                         <td style="font-family: Avenir-bold; font-size: 20px;">Free
-                            <p style="font-weight: normal;">Up to 5 users per account</p>
+                            <p style="font-weight: normal;font-size: 18px;">Up to 5 users per account</p>
                         </td>
                         <td style="font-family: Avenir-bold; font-size: 20px;">Team
-                            <p style="font-weight: normal;">Up to 20 users per account</p>
+                            <p style="font-weight: normal;font-size: 18px;">Up to 20 users per account</p>
+                        </td>
+                        <td style="font-family: Avenir-bold; font-size: 20px;">Enterprise
+                            <p style="font-weight: normal; font-size: 18px;">Unlimited</p>
                         </td>
                     </tr>
                     <tr>
@@ -117,41 +127,47 @@
                         <td class="price">19€
                             <p style="font-size:small ;font-weight: normal;">user/month (billed monthly)</p>
                         </td>
+                        <td class="price">Custom
+                            <p style="font-size:small ;font-weight: normal;">pricing</p>
+                        </td>
                     </tr>
                     <tr>
                         <td></td>
                         <td><button class="secondary-button">Download</button></td>
-                        <td><button class="secondary-button">Get Started</button></td>
+                        <td><button class="secondary-button-buy">Start free trial</button></td>
+                        <td><button class="secondary-button"
+                                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/bliro/personal-1-1-session-30-min'});return false;">Contact
+                                Sales</button></td>
                     </tr>
                     <tr>
                         <td class="bliro-feature">Automatic meeting detection</td>
                         <td style="text-align: center;"><i class="fas fa-check"></i></td>
                         <td style="text-align: center;"><i class="fas fa-check"></i></td>
-
+                        <td style="text-align: center;"><i class="fas fa-check"></i></td>
                     </tr>
                     <tr>
                         <td>Outlook, Google Calendar integration</td>
                         <td style="text-align: center;"><i class="fas fa-check"></i></td>
                         <td style="text-align: center;"><i class="fas fa-check"></i></td>
-
+                        <td style="text-align: center;"><i class="fas fa-check"></i></td>
                     </tr>
                     <tr>
                         <td>Note taking</td>
                         <td style="text-align: center;">Unlimited</td>
                         <td style="text-align: center;">Unlimited</td>
-
+                        <td style="text-align: center;">Unlimited</td>
                     </tr>
                     <tr>
                         <td class="bliro-feature">Third party tools integrations (Salesforce, Gainsight, Slack etc)</td>
                         <td style="text-align: center;">Two integrations</td>
                         <td style="text-align: center;">Unlimited</td>
-
+                        <td style="text-align: center;">Unlimited</td>
                     </tr>
                     <tr>
                         <td class="bliro-feature">Voice dictation</td>
                         <td style="text-align: center;"><i class="fas fa-times"></i></td>
                         <td style="text-align: center;"><i class="fas fa-check"></i></td>
-
+                        <td style="text-align: center;"><i class="fas fa-check"></i></td>
                     </tr>
                     <tr>
                         <td><br></td>
@@ -161,12 +177,15 @@
                     <tr>
                         <td></td>
                         <td><button class="secondary-button">Download</button></td>
-                        <td><button class="secondary-button">Get Started</button></td>
+                        <td><button class="secondary-button-buy">Start free trial</button></td>
+                        <td><button class="secondary-button"
+                                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/bliro/personal-1-1-session-30-min'});return false;">Contact Sales</button></td>
                     </tr>
                 </tbody>
             </table>
         </div>
-
+        <br>
+        <hr>
         <h1 class="faq-header">Frequently asked questions</h1>
         <div class="faq-container">
             <div class="faq">

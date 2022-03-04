@@ -130,10 +130,10 @@ h1 {
 
 .primary-button:hover {
   cursor: pointer;
-  color: black;
+  color: white;
   /* White */
 
-background: #FFFEFD;
+background: rgb(209, 59, 0);
 /* Bliro Orange */
 
 border: 0.188rem solid rgba(209, 73, 0, 0.932);
@@ -142,6 +142,21 @@ border-radius: 5px;
 }
 
 .secondary-button {
+  margin-bottom: 1.25rem;
+  color: black;
+  font-size: 1.125rem;
+  width: 14rem;
+  height: 3.438rem;
+  border: 0.125rem solid rgba(209, 73, 0, 0.932);
+
+  /* Bliro Orange */
+
+  background: white;
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+.secondary-button-buy {
   margin-bottom: 1.25rem;
   color: aliceblue;
   font-size: 1.125rem;
@@ -156,12 +171,25 @@ border-radius: 5px;
   box-shadow: none;
 }
 
-.secondary-button:hover {
+.secondary-button-buy:hover {
   cursor: pointer;
-  color: black;
+  color: white;
   /* White */
 
-background: #FFFEFD;
+background: rgb(209, 59, 0);
+/* Bliro Orange */
+
+border: 0.188rem solid rgba(209, 73, 0, 0.932);
+box-sizing: border-box;
+border-radius: 5px;
+}
+
+.secondary-button:hover {
+  cursor: pointer;
+  color: white;
+  /* White */
+
+background: rgb(209, 73, 0, 0.932);
 /* Bliro Orange */
 
 border: 0.188rem solid rgba(209, 73, 0, 0.932);
@@ -302,5 +330,5 @@ table tr td{
   font-family: Avenir-bold;
 }
 
-.card-block{}
+
 
