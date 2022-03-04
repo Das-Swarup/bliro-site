@@ -50,7 +50,7 @@ h1 {
   text-align: center;
 }
 
-.home-text h1, .sitetitle {
+.home-text h1, .sitetitle, .about-p1 h1 {
   margin-top: 0.625rem;
   font-size: 4rem;
   font-weight: 700;
@@ -269,6 +269,24 @@ border-radius: 5px;
   font-size: 1.125rem;
 }
 
+.download{
+  box-sizing: border-box;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background: white;
+  height: 10.438rem;
+  width: 150%;
+}
+
+.buttons{
+  display: flex;
+  gap: 2rem;
+}
+
 .pricing-table{
   margin-top: 5rem;
   margin-bottom: 5.625rem;
@@ -337,5 +355,31 @@ table tr td{
   font-family: Avenir-bold;
 }
 
+.about-p1{
+  margin-top: 4rem;
+  margin-bottom: 10.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify center;
+}
+
+.about-p2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify center;
+}
+
+.about-p2 h2{
+  text-align: center;
+  font-family: Avenir-bold;
+}
+
+.about-p2 img{
+  margin-top: 4rem;
+}
 
 

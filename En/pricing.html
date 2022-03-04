@@ -66,7 +66,7 @@
                                 About <span class="sr-only">(current)</span></a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <a class="dropdown-item" href="./blog/index.html">Blog</a>
-                                <a class="dropdown-item" href="#">About Us</a>
+                                <a class="dropdown-item" href="./about.html">About Us</a>
                                 <a class="dropdown-item"
                                     href="https://bliro.notion.site/The-Bliro-Job-Board-17065e23cac244dbbc37ba7e8f18a3c3">Careers</a>
                             </div>
@@ -112,7 +112,8 @@
                         <td style="font-family: Avenir-bold; font-size: 20px;">Free
                             <p style="font-weight: normal;font-size: 18px;">Up to 5 users per account</p>
                         </td>
-                        <td style="font-family: Avenir-bold; font-size: 20px;border: 3px solid #D14900;border-bottom: none;">
+                        <td
+                            style="font-family: Avenir-bold; font-size: 20px;border: 3px solid #D14900;border-bottom: none;">
                             Team
                             <p style="font-weight: normal;font-size: 18px;">Up to 20 users per account</p>
                         </td>
@@ -134,7 +135,9 @@
                     </tr>
                     <tr>
                         <td></td>
-                        <td><button class="secondary-button">Download</button></td>
+                        <td><button class="secondary-button" data-toggle="modal"
+                                data-target="#download">Download</button></td>
+
                         <td style="border: 3px solid #D14900;border-bottom: none;border-top: none;"><button
                                 class="secondary-button-buy">Start free trial</button></td>
                         <td><button class="secondary-button"
@@ -148,12 +151,34 @@
                                 class="fas fa-check"></i></td>
                         <td style="text-align: center;"><i class="fas fa-check"></i></td>
                     </tr>
+                    <!-- Modal -->
+                    <div class="modal fade" id="download" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="download">
+                                <div style="align-items: center;" class="modal-header">
+                                    <h3 style="font-family: Avenir-bold;">Bliro for Mac & Windows</h3>
+                                </div>
+                                <div class="">
+                                </div>
+                                <div class="buttons">
+                                    <button type="button" class="secondary-button" data-dismiss="modal"><i
+                                            class="bi bi-apple" style="font-size:1.6rem"></i> Download for Mac</button>
+                                    <button type="button" class="secondary-button" style="width: fit-content;"><i
+                                            class="bi bi-windows" style="font-size:1.6rem"></i> Download for
+                                        Windows</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal -->
                     <tr class="feature-row">
 
                         <td>Outlook, Google Calendar integration</td>
                         <td style="text-align: center;"><i class="fas fa-check"></i></td>
-                        <td style="text-align: center;border: 3px solid #D14900;border-bottom: none;border-top: none;"><i
-                                class="fas fa-check"></i></td>
+                        <td style="text-align: center;border: 3px solid #D14900;border-bottom: none;border-top: none;">
+                            <i class="fas fa-check"></i>
+                        </td>
                         <td style="text-align: center;"><i class="fas fa-check"></i></td>
 
                     </tr>
@@ -174,8 +199,9 @@
                     <tr class="feature-row">
                         <td class="bliro-feature">Voice dictation</td>
                         <td style="text-align: center;"><i class="fas fa-times"></i></td>
-                        <td style="text-align: center;border: 3px solid #D14900;border-bottom: none;border-top: none;"><i
-                                class="fas fa-check"></i></td>
+                        <td style="text-align: center;border: 3px solid #D14900;border-bottom: none;border-top: none;">
+                            <i class="fas fa-check"></i>
+                        </td>
                         <td style="text-align: center;"><i class="fas fa-check"></i></td>
                     </tr>
                     <tr>
@@ -185,8 +211,10 @@
                     </tr>
                     <tr>
                         <td></td>
-                        <td><button class="secondary-button">Download</button></td>
-                        <td style="border: 3px solid #D14900;border-top: none;"><button class="secondary-button-buy">Start
+                        <td><button class="secondary-button" data-toggle="modal"
+                            data-target="#download">Download</button></td>
+                        <td style="border: 3px solid #D14900;border-top: none;"><button
+                                class="secondary-button-buy">Start
                                 free trial</button></td>
                         <td><button class="secondary-button"
                                 onclick="Calendly.initPopupWidget({url: 'https://calendly.com/bliro/personal-1-1-session-30-min'});return false;">Contact
@@ -196,8 +224,10 @@
             </table>
         </div>
         <br>
-        <div class="container-fluid"><hr></div>
-        
+        <div class="container-fluid">
+            <hr>
+        </div>
+
         <h1 class="faq-header">Frequently asked questions</h1>
         <div class="faq-container">
             <div class="faq">
@@ -251,5 +281,4 @@
             <a class="end-element" href="">Terms of Service</a>
             <a class="end-element" href="./En/privacy.html">Privacy Policy</a>
         </footer>
-
     </div>
