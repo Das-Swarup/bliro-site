@@ -271,6 +271,7 @@ border-radius: 5px;
 
 .pricing-table{
   margin-top: 5rem;
+  margin-bottom: 5.625rem;
 }
 
 table tr td{
@@ -283,6 +284,12 @@ table tr td{
   font-family: Avenir-bold;
 }
 
+.feature-row:hover{
+  background-color:rgba(236, 234, 234, 0.534); 
+  border-radius: 5px;
+  
+}
+
 .bliro-feature{
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
@@ -292,7 +299,7 @@ table tr td{
 
 .faq-header{
   font-family: Avenir-bold;
-  margin-top: 15.625rem;
+  margin-top: 5.625rem;
   margin-bottom: 5rem;
   font-size: 4rem;
 }
