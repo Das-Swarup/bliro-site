@@ -95,7 +95,7 @@ h1 {
 }
 .demo-video {
   width: 90%;
-  margin: 5rem 0 5rem 0;
+  margin: 4rem 0 5rem 0;
 }
 
 .primary-button {
@@ -196,6 +196,7 @@ border: 0.188rem solid rgba(209, 73, 0, 0.932);
 box-sizing: border-box;
 border-radius: 5px;
 }
+
 
 .row {
   display: flex;

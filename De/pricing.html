@@ -30,6 +30,10 @@
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- Calendly link widget begin -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <!-- Calendly link widget end -->
     <script src="./contact_form.js"></script>
     <script src="./main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
@@ -44,7 +48,8 @@
     <div class="container">
 
         <div id="header" class="header">
-            <a href="./index.html"><img class="logo" src="../img/bliro_logo_large.svg" alt="" width="100" height="100"></a>
+            <a href="./index.html"><img class="logo" src="../img/bliro_logo_large.svg" alt="" width="100"
+                    height="100"></a>
             <nav class="navbar navbar-expand-sm navbar-light justify-content-end">
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -82,7 +87,8 @@
                             </div>
                         </li>
                         <a style="font-weight: 700;color:#161E31;font-family: Avenir-bold;font-size: 1.5rem;margin-top: 1rem;"
-                            class="nav-link" href="#"><button type="button" class="nav-button">Bliro downloaden</button></a>
+                            class="nav-link" href="#"><button type="button" class="nav-button">Bliro
+                                downloaden</button></a>
                     </ul>
                 </div>
             </nav>
@@ -103,10 +109,15 @@
                             <p><br></p>
                         </td>
                         <td style="font-family: Avenir-bold; font-size: 20px;">Free
-                            <p style="font-weight: normal;">Bis zu 5 Nutzern per Account</p>
+                            <p style="font-weight: normal;font-size: 18px;">Bis zu 5 Nutzern per Account</p>
                         </td>
-                        <td style="font-family: Avenir-bold; font-size: 20px;">Team
-                            <p style="font-weight: normal;">Bis zu 20 Nutzern pro Account</p>
+                        <td
+                            style="font-family: Avenir-bold; font-size: 20px;border: 3px solid #D14900;border-bottom: none;">
+                            Team
+                            <p style="font-weight: normal;font-size: 18px;">Bis zu 20 Nutzern pro Account</p>
+                        </td>
+                        <td style="font-family: Avenir-bold; font-size: 20px;">Enterprise
+                            <p style="font-weight: normal; font-size: 18px;">Unbegrenzt</p>
                         </td>
                     </tr>
                     <tr>
@@ -114,54 +125,96 @@
                         <td class="price">Free
                             <p style="font-size:small ;font-weight: normal;"><br></p>
                         </td>
-                        <td class="price">19€
+                        <td style="border: 3px solid #D14900;border-bottom: none;border-top: none;" class="price">19€
                             <p style="font-size:small ;font-weight: normal;">Nutzer/Monat (monatliche Rechnung)</p>
+                        </td>
+                        <td class="price">Custom
+                            <p style="font-size:small ;font-weight: normal;">pricing</p>
                         </td>
                     </tr>
                     <tr>
                         <td></td>
-                        <td><button class="secondary-button">Download</button></td>
-                        <td><button class="secondary-button">Get Started</button></td>
+                        <td><button class="secondary-button" data-toggle="modal"
+                            data-target="#download">Download</button></td>
+                        <td style="border: 3px solid #D14900;border-bottom: none;border-top: none;"><button
+                                class="secondary-button-buy">Start free trial</button></td>
+                        <td><button class="secondary-button"
+                                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/bliro/personal-1-1-session-30-min'});return false;">Contact
+                                Sales</button></td>
                     </tr>
-                    <tr>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="download" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="download">
+                                <div style="align-items: center;" class="modal-header">
+                                    <h3 style="font-family: Avenir-bold;">Bliro for Mac & Windows</h3>
+                                </div>
+                                <div class="">
+                                </div>
+                                <div class="buttons">
+                                    <button type="button" class="secondary-button" data-dismiss="modal"><i
+                                            class="bi bi-apple" style="font-size:1.6rem"></i> Download for Mac</button>
+                                    <button type="button" class="secondary-button" style="width: fit-content;"><i
+                                            class="bi bi-windows" style="font-size:1.6rem"></i> Download for
+                                        Windows</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+
+                    <tr class="feature-row">
                         <td class="bliro-feature">Automatisches Erkennen von Onlineterminen</td>
                         <td style="text-align: center;"><i class="fas fa-check"></i></td>
+                        <td style="text-align: center;border:3px solid #D14900;border-bottom:none;border-top: none;"><i
+                                class="fas fa-check"></i></td>
                         <td style="text-align: center;"><i class="fas fa-check"></i></td>
-
                     </tr>
-                    <tr>
+                    <tr class="feature-row">
                         <td>Integration in Outlook und Google Kalender</td>
                         <td style="text-align: center;"><i class="fas fa-check"></i></td>
+                        <td style="text-align: center;border:3px solid #D14900;border-bottom:none;border-top: none;"><i
+                                class="fas fa-check"></i></td>
                         <td style="text-align: center;"><i class="fas fa-check"></i></td>
-
                     </tr>
-                    <tr>
+                    <tr class="feature-row">
                         <td>Notizen</td>
-                        <td style="text-align: center;">Unlimited</td>
-                        <td style="text-align: center;">Unlimited</td>
-
+                        <td style="text-align: center;">Unbegrenzt</td>
+                        <td style="text-align: center;border:3px solid #D14900;border-bottom:none;border-top: none;">
+                            Unbegrenzt</td>
+                        <td style="text-align: center;">Unbegrenzt</td>
                     </tr>
-                    <tr>
+                    <tr class="feature-row">
                         <td class="bliro-feature">Integration in Drittanbieter (Salesforce, Gainsight, Slack etc)</td>
                         <td style="text-align: center;">Two integrations</td>
-                        <td style="text-align: center;">Unlimited</td>
-
+                        <td style="text-align: center;border:3px solid #D14900;border-bottom:none;border-top: none;">
+                            Unbegrenzt</td>
+                        <td style="text-align: center;">Unbegrenzt</td>
                     </tr>
-                    <tr>
+                    <tr class="feature-row">
                         <td class="bliro-feature">Sprachdiktierfunktion</td>
                         <td style="text-align: center;"><i class="fas fa-times"></i></td>
+                        <td style="text-align: center;border:3px solid #D14900;border-bottom:none;border-top: none;"><i
+                                class="fas fa-check"></i></td>
                         <td style="text-align: center;"><i class="fas fa-check"></i></td>
-
                     </tr>
                     <tr>
                         <td><br></td>
                         <td><br></td>
-                        <td><br></td>
+                        <td style="border: 3px solid #D14900;border-bottom: none;border-top: none;"><br></td>
                     </tr>
                     <tr>
                         <td></td>
-                        <td><button class="secondary-button">Download</button></td>
-                        <td><button class="secondary-button">Get Started</button></td>
+                        <td><button class="secondary-button" data-toggle="modal"
+                                data-target="#download">Download</button></td>
+                        <td style="border: 3px solid #D14900;border-top: none;"><button
+                                class="secondary-button-buy">Start
+                                free trial</button></td>
+                        <td><button class="secondary-button"
+                                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/bliro/personal-1-1-session-30-min'});return false;">Contact
+                                Sales</button></td>
                     </tr>
                 </tbody>
             </table>
@@ -204,7 +257,7 @@
             </div>
             <div class="faq">
                 <p class="question">Kann ich mit jemandem sprechen? Ich habe noch Fragen.</p>
-                <p style="text-align: justify;">Ja, wir würden uns freuen, von Ihnen zu hören! 
+                <p style="text-align: justify;">Ja, wir würden uns freuen, von Ihnen zu hören!
                     Schicken Sie uns eine E-Mail an hello@bliro.io.</p>
                 <br>
             </div>

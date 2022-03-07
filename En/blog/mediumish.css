@@ -101,7 +101,7 @@ section {
 	padding-left:0;
 }
 .listfeaturedtag h2.card-title,.listrecent h2.card-title {
-	font-size:1.3rem;
+	font-size:1.0rem;
 	font-weight:700;
 	line-height: 1.25;
 }
@@ -114,8 +114,8 @@ section {
 }
 .listfeaturedtag h4.card-text,.listrecent h4.card-text {
 	color:rgba(0,0,0,.44);
-	font-size:0.95rem;
-	line-height:1.4;
+	font-size:0.55rem;
+	line-height:0.4;
 	font-weight:400;
 }
 .listfeaturedtag .wrapfooter {
