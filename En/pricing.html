@@ -82,7 +82,7 @@
                                 EN
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="../index.html">English | EN</a>
+                                <a class="dropdown-item" href="./pricing.html">English | EN</a>
                                 <a class="dropdown-item" href="../De/pricing.html">German | DE</a>
                             </div>
                         </li>
@@ -113,6 +113,22 @@
             <table style="border: none;" class="">
                 <tbody>
                     <tr>
+                        <!-- overlay-top -->
+                        <div class="overlay" id="overlay">
+                            <div class="popup">
+                                <div onclick="CloseModal()" class="CloseIcon">&#10006;</div>
+                                <h3 style="font-family: Avenir-bold;">Bliro for Mac & Windows</h3>
+                                <div class="buttons">
+                                    <button type="button" class="secondary-button"><i class="bi bi-apple"
+                                            style="font-size:1.6rem"></i> Download for Mac</button>
+                                    <button type="button" class="secondary-button" style="width: fit-content;"><i
+                                            class="bi bi-windows" style="font-size:1.6rem"></i> Download for
+                                        Windows</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- overlay-top -->
+
                         <td style="font-family: Avenir-bold; font-size: 20px;">Bliro pricing
                             <p><br></p>
                         </td>
@@ -142,13 +158,13 @@
                     </tr>
                     <tr>
                         <td></td>
-                        <td><button class="secondary-button" data-toggle="modal"
-                                data-target="#download">Download</button></td>
+                        <td><button onclick="OpenModal()" ondblclick="CloseModal()"
+                                class="secondary-button">Download</button></td>
 
                         <td style="border: 3px solid #D14900;border-bottom: none;border-top: none;"><button
                                 class="secondary-button-buy">Start free trial</button></td>
                         <td><button class="secondary-button"
-                                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/bliro/personal-1-1-session-30-min'});return false;">Contact
+                                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/bliro/talk-to-sales'});return false;">Contact
                                 Sales</button></td>
                     </tr>
                     <tr class="feature-row">
@@ -158,27 +174,9 @@
                                 class="fas fa-check"></i></td>
                         <td style="text-align: center;"><i class="fas fa-check"></i></td>
                     </tr>
-                    <!-- Modal -->
-                    <div class="modal fade" id="download" tabindex="-1" role="dialog"
-                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" role="document">
-                            <div class="download">
-                                <div style="align-items: center;" class="modal-header">
-                                    <h3 style="font-family: Avenir-bold;">Bliro for Mac & Windows</h3>
-                                </div>
-                                <div class="">
-                                </div>
-                                <div class="buttons">
-                                    <button type="button" class="secondary-button" data-dismiss="modal"><i
-                                            class="bi bi-apple" style="font-size:1.6rem"></i> Download for Mac</button>
-                                    <button type="button" class="secondary-button" style="width: fit-content;"><i
-                                            class="bi bi-windows" style="font-size:1.6rem"></i> Download for
-                                        Windows</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal -->
+
+
+
                     <tr class="feature-row">
 
                         <td>Outlook, Google Calendar integration</td>
@@ -218,17 +216,32 @@
                     </tr>
                     <tr>
                         <td></td>
-                        <td><button class="secondary-button" data-toggle="modal"
-                                data-target="#download">Download</button></td>
+                        <td><button class="secondary-button" onclick="OpenModal()"
+                                ondblclick="CloseModal()">Download</button></td>
                         <td style="border: 3px solid #D14900;border-top: none;"><button
                                 class="secondary-button-buy">Start
                                 free trial</button></td>
                         <td><button class="secondary-button"
-                                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/bliro/personal-1-1-session-30-min'});return false;">Contact
+                                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/bliro/talk-to-sales'});return false;">Contact
                                 Sales</button></td>
                     </tr>
                 </tbody>
             </table>
+            <!-- overlay-bottom -->
+            <div class="overlay-bottom" id="overlay-bottom">
+                <div class="popup">
+                    <div onclick="CloseModal()" class="CloseIcon">&#10006;</div>
+                    <h3 style="font-family: Avenir-bold;">Bliro for Mac & Windows</h3>
+                    <div class="buttons">
+                        <button type="button" class="secondary-button"><i class="bi bi-apple"
+                                style="font-size:1.6rem"></i> Download for Mac</button>
+                        <button type="button" class="secondary-button" style="width: fit-content;"><i
+                                class="bi bi-windows" style="font-size:1.6rem"></i> Download for
+                            Windows</button>
+                    </div>
+                </div>
+            </div>
+            <!-- overlay-bottom -->
         </div>
         <br>
         <div class="container-fluid">
@@ -288,4 +301,22 @@
             <a class="end-element" href="">Terms of Service</a>
             <a class="end-element" href="./privacy.html">Privacy Policy</a>
         </footer>
+
+        <!-- Download Popup Function -->
+        <script>
+            function OpenModal() {
+                let element = document.getElementById('overlay')
+                let bottomelement = document.getElementById('overlay-bottom')
+                element.style.display = 'block'
+                bottomelement.style.display = 'block'
+            }
+            function CloseModal() {
+                let element = document.getElementById('overlay')
+                let bottomelement = document.getElementById('overlay-bottom')
+                element.style.display = 'none'
+                bottomelement.style.display = 'none'
+            }
+        </script>
+        <!-- Download Popup Function -->
+
     </div>
