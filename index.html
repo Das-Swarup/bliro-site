@@ -30,6 +30,9 @@
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Calendly link widget begin -->
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
@@ -46,6 +49,7 @@
 <body class="is-preload">
     <div class="container">
 
+        <!-- HEADER -->
         <div id="header" class="header">
             <a href="#"><img class="logo" src="./img/bliro_logo_large.svg" alt="" width="100" height="100"></a>
             <nav class="navbar navbar-expand-sm navbar-light justify-content-end">
@@ -59,12 +63,12 @@
                         <li class="nav-item dropdown">
 
                             <a style="font-weight: 700;color:#161E31;font-family: Avenir-bold;font-size: 1.5rem"
-                                class="nav-link dropdown-toggle mr-4" href="#" id="navbarDropdownMenuLink" role="button"
+                                class="nav-link  mr-4" href="#" id="navbarDropdownMenuLink" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                About <span class="sr-only">(current)</span></a>
+                                About <span class="sr-only">(current)</span><i class="fa-solid fa-angle-down"></i></a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <a class="dropdown-item" href="./En/about.html">About Us</a>
-                                <a class="dropdown-item" href="./En/blog/index.html">Blog</a>                      
+                                <a class="dropdown-item" href="./En/blog/index.html">Blog</a>
                                 <a class="dropdown-item"
                                     href="https://bliro.notion.site/The-Bliro-Job-Board-17065e23cac244dbbc37ba7e8f18a3c3">Careers</a>
                             </div>
@@ -74,11 +78,11 @@
                                 class="nav-link mr-4" href="./En/pricing.html">Pricing</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a style="font-weight: 700;color:#161E31;font-family: Avenir-bold;font-size: 1.5rem"
-                                class="nav-link dropdown-toggle mr-4" href="#" id="navbarDropdownMenuLink" role="button"
+                            <a style="font-weight: 700;color:#161E31;font-family: Avenir-bold;font-size: 1.5rem;"
+                                class="nav-link  mr-4" href="#" id="navbarDropdownMenuLink" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 EN
-                            </a>
+                                <i class="fa-solid fa-angle-down"></i></a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <a class="dropdown-item" href="#">English | EN</a>
                                 <a class="dropdown-item" href="./De/index.html">German | DE</a>
@@ -98,6 +102,7 @@
                 </div>
             </nav>
         </div>
+        <!-- HEADER -->
 
         <div class="home-text">
             <p style="color: #D14900">Your personal meeting assistant.</p>
@@ -111,106 +116,13 @@
         <div class="section-2">
             <a href="./En/pricing.html"><button class="primary-button">Get started with Bliro</button></a>
             <p>Not sure? Schedule a <a style="color: #D14900;" href=""
-                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/bliro/personal-1-1-session-30-min'});return false;">demo</a> with
+                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/bliro/personal-1-1-session-30-min'});return false;">demo</a>
+                with
                 us!</p>
-            <!-- <img src="./img/Rectangle 2.png" alt=""> -->
             <video controls class="demo-video">
                 <source src="./img/Demo Video Short.mp4" type="video/mp4">
             </video>
         </div>
-
-        <div class="mdc-dialog" style="margin-top: 2em; z-index: 100000">
-            <div class="mdc-dialog__container">
-                <div class="mdc-dialog__surface" role="alertdialog" aria-modal="true" aria-labelledby="my-dialog-title"
-                    aria-describedby="my-dialog-content" style="padding: 5% 10% 5% 10%;">
-                    <!-- Dialog Title -->
-                    <h2 class="mdc-dialog__title" id="my-dialog-title" style="padding-left: 0; padding-right: 0;">
-                        <!--
-                        -->Looking forward to showing bliro to you!
-                        <!--
-                    -->
-                    </h2>
-                    <div class="mdc-dialog__content" id="my-dialog-content" style="padding-right: 0; padding-left: 0;">
-                        <p>
-                            Plase leave us with your contact details so we can reach out to you to schedule an
-                            appointment.
-                        </p>
-
-                        <form method="POST" class="contact-form">
-                            <!-- NAME -->
-                            <label class="mdc-text-field mdc-text-field--outlined mdc-text-field--no-label"
-                                style="align-self: center; width: 100%; padding: 0;">
-                                <span class="mdc-notched-outline">
-                                    <span class="mdc-notched-outline__leading"></span>
-                                    <span class="mdc-notched-outline__trailing"></span>
-                                </span>
-                                <input class="mdc-text-field__input signup_name" type="text" aria-label="Label"
-                                    placeholder="Name" id="dialog-input-name">
-                            </label>
-                            <!-- NAME -->
-                            <label class="mdc-text-field mdc-text-field--outlined mdc-text-field--no-label"
-                                style="align-self: center; width: 100%; padding: 0;">
-                                <span class="mdc-notched-outline">
-                                    <span class="mdc-notched-outline__leading"></span>
-                                    <span class="mdc-notched-outline__trailing"></span>
-                                </span>
-                                <input class="mdc-text-field__input signup_email" type="text" aria-label="Label"
-                                    placeholder="E-Mail" id="dialog-input-mail">
-                            </label>
-
-                            <label
-                                class="mdc-text-field mdc-text-field--outlined mdc-text-field--textarea mdc-text-field--no-label"
-                                style="align-self: center; width: 100%; padding: 0;">
-                                <span class="mdc-notched-outline">
-                                    <span class="mdc-notched-outline__leading"></span>
-                                    <span class="mdc-notched-outline__trailing"></span>
-                                </span>
-                                <span class="mdc-text-field__resizer">
-                                    <textarea class="mdc-text-field__input signup_message" rows="3" cols="20"
-                                        aria-label="Label" placeholder="Anything else?"
-                                        style="margin: 0; padding: 16px 16px 16px 16px"
-                                        id="dialog-input-message"></textarea>
-                                </span>
-                            </label>
-                            <div class="mdc-form-field">
-                                <div class="mdc-checkbox">
-                                    <input type="checkbox" class="mdc-checkbox__native-control"
-                                        id="sign-up-consent-checkbox" />
-                                    <div class="mdc-checkbox__background">
-                                        <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
-                                            <path class="mdc-checkbox__checkmark-path" fill="none"
-                                                d="M1.73,12.91 8.1,19.28 22.79,4.59" />
-                                        </svg>
-                                        <div class="mdc-checkbox__mixedmark"></div>
-                                    </div>
-                                    <div class="mdc-checkbox__ripple"></div>
-                                </div>
-                                <label for="sign-up-consent-checkbox">
-                                    Yes, I agree that bliro.io can store my contact details
-                                    and contact me for the purpose of this demo.</label>
-                            </div>
-
-                            <!-- DIALOG ACTIONS -->
-                            <div class="mdc-dialog__actions">
-                                <button type="button" class="mdc-button mdc-dialog__button"
-                                    data-mdc-dialog-action="cancel">
-                                    <div class="mdc-button__ripple"></div>
-                                    <span class="mdc-button__label">Discard</span>
-                                </button>
-                                <button type="submit" class="mdc-button mdc-dialog__button signup_beta disabled"
-                                    data-mdc-dialog-action="discard" id="modal-sign-up-button">
-                                    <div class="mdc-button__ripple"></div>
-                                    <span class="mdc-button__label">Sign Up</span>
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class="mdc-dialog__scrim"></div>
-        </div>
-
-        
 
         <div style="text-align: center">
             <h3 style="font-family: Avenir-bold;font-size: 3rem;">We are proudly supported by:</h3>
@@ -253,37 +165,44 @@
             <h1>You’ve never experienced customer meetings like this before</h1>
             <div class="feature">
                 <div class="feature-desc">
-                    <i class="bi bi-file-earmark-text" style="font-size: 6rem;"></i>
+                    <i style="width: 12rem;margin-bottom: 2rem;"><img src="./img/notes 1.svg" alt=""></i>
                     <h3 style="font-family: Avenir-bold;">Document faster</h3>
-                    <p>Bliro runs on Mac and Windows computers and tracks customer calls. It connects to your calendar
-                        and your customer relationship management system, to automatically document the call, including
-                        important metadata. No more repeated manual documenting in different tools.</p>
+                    <p>Bliro documents your customer meetings for you. All relevant fields are populated automatically
+                        and synced to your CRM system.</p>
                 </div>
 
-                <img src="./img/placeholder.png" alt="">
+                <img style="width: 45%;" src="./img/documentfastershort.gif" alt="">
 
             </div>
-            <div class="feature">
-                <img src="./img/placeholder.png" alt="">
-                <div class="feature-desc">
-                    <i class="bi bi-trophy" style="font-size: 6rem;"></i>
-                    <h3 style="font-family: Avenir-bold;">Better Data Quality</h3>
-                    <p>Users can add notes about what happened in the call. Either using bliro's voice dictation feature
-                        or using bliro's Smart Note.</p>
-                </div>
 
+            <div class="feature">
+                <img src="./img/documentmoreshort.gif" alt="">
+                <div class="feature-desc">
+                    <i style="width: 12rem;margin-bottom: 2rem;"><img src="./img/trophy 1.svg" alt=""></i>
+                    <h3 style="font-family: Avenir-bold;">Document more</h3>
+                    <p>You can add notes about what happened in the call. Either using bliro's voice dictation feature
+                        or with bliro's Smart Note.</p>
+                </div>
             </div>
+
             <div class="feature">
                 <div class="feature-desc">
-                    <i class="bi bi-people" style="font-size: 6rem;"></i>
-                    <h3 style="font-family: Avenir-bold;">Enable your Team</h3>
-                    <p>Bliro glues all your systems together - before data is getting lost. Customer Meetings are logged
-                        in your main documentation tool AND notes from the customer call can be shared with different
-                        stakeholders directly from bliro. </p>
+                    <i style="width: 12rem;margin-bottom: 2rem;"><img src="./img/image 7.svg" alt=""></i>
+                    <h3 style="font-family: Avenir-bold;">Share with your colleagues</h3>
+                    <p>Often customer meetings don’t just contain commercial information. Directly share product
+                        feedback with Product Management and competitive insights with the Competitive Team.</p>
                 </div>
+                <img src="./img/enableeveryoneshort.gif" alt="">
+            </div>
+        </div>
 
-                <img src="./img/placeholder.png" alt="">
-
+        <div class="end-banner">
+            <h1>Level up your customer success productivity</h1>
+            <div class="banner-button">
+                <a href="./En/pricing.html"><button class="primary-button">Get started with Bliro</button></a>
+                <button class="secondary-button"
+                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/bliro/personal-1-1-session-30-min'});return false;">Schedule
+                    a demo</button>
             </div>
         </div>
 
