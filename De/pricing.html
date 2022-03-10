@@ -30,6 +30,9 @@
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Calendly link widget begin -->
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
@@ -62,9 +65,9 @@
                         <li class="nav-item dropdown">
 
                             <a style="font-weight: 700;color:#161E31;font-family: Avenir-bold;font-size: 1.5rem"
-                                class="nav-link dropdown-toggle mr-4" href="#" id="navbarDropdownMenuLink" role="button"
+                                class="nav-link mr-4" href="#" id="navbarDropdownMenuLink" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                About <span class="sr-only">(current)</span></a>
+                                About <span class="sr-only">(current)</span><i class="fa-solid fa-angle-down"></i></a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <a class="dropdown-item" href="#">About Us</a>
                                 <a class="dropdown-item" href="#">Blog</a>
@@ -78,18 +81,25 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a style="font-weight: 700;color:#161E31;font-family: Avenir-bold;font-size: 1.5rem"
-                                class="nav-link dropdown-toggle mr-4" href="#" id="navbarDropdownMenuLink" role="button"
+                                class="nav-link mr-4" href="#" id="navbarDropdownMenuLink" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 DE
-                            </a>
+                                <i class="fa-solid fa-angle-down"></i></a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <a class="dropdown-item" href="../En/pricing.html">English | EN</a>
                                 <a class="dropdown-item" href="../De/index.html">German | DE</a>
                             </div>
                         </li>
-                        <a style="font-weight: 700;color:#161E31;font-family: Avenir-bold;font-size: 1.5rem;margin-top: 1rem;"
-                            class="nav-link" href="#"><button type="button" class="nav-button">Bliro
-                                downloaden</button></a>
+                        <li class="nav-item dropdown" style="margin-top: 1.2rem;">
+                            <a style="font-weight: 700;color:#161E31;font-family: Avenir-bold;font-size: 1.5rem;"
+                                class="nav-link" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown"><button type="button" class="nav-button">Bliro
+                                    downloaden</button></a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Mac</a>
+                                <a class="dropdown-item" href="#">Windows</a>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -278,6 +288,7 @@
             <a class="end-element"
                 href="https://bliro.notion.site/The-Bliro-Job-Board-17065e23cac244dbbc37ba7e8f18a3c3">Careers</a>
             <a class="end-element" href="mailto:hello@bliro.io?subject=Get in Touch">Contact Us</a>
+            <a class="end-element" href="">Impressum</a>
             <a class="end-element" href="">Terms of Service</a>
             <a class="end-element" href="./privacy.html">Privacy Policy</a>
         </footer>
