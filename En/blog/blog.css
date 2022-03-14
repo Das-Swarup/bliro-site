@@ -114,11 +114,6 @@ h1 {
   text-decoration: none;
 }
 
-.buttons {
-  display: flex;
-  gap: 2rem;
-}
-
 
 .showcase {
   margin-top: 4rem;
