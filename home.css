@@ -314,6 +314,39 @@ h1 {
   padding: 2rem;
 }
 
+
+.about-container h1 {
+  font-family: Avenir-bold;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.about img {
+  width: 50%;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: justify center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.slide {
+  margin-left: 2.3rem;
+  width: 80%;
+}
+
+.about-desc {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  width: 50%;
+}
+
 .footer {
   display: flex;
   align-items: center;
@@ -420,7 +453,7 @@ table tr td {
 
 .about-p1 {
   margin-top: 4rem;
-  margin-bottom: 10.5rem;
+  margin-bottom: 4.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -428,13 +461,9 @@ table tr td {
   text-align: justify center;
 }
 
-.about-desc {
-  width: 80%;
-  text-align: justify;
-}
 
 .about-p2 {
-  margin-top: 4rem;
+  margin-top: 6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
