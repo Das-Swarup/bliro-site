@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap");
 @font-face {
   font-family: Avenir-bold;
@@ -33,8 +34,6 @@ li {
   left: auto;
   right: auto;
 }
-
-
 
 .home-text p,
 h1 {
@@ -113,6 +112,7 @@ h1 {
   color: #a1410d;
   text-decoration: none;
 }
+
 
 .showcase {
   margin-top: 4rem;
