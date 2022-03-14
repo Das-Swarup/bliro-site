@@ -93,7 +93,6 @@ h1 {
   flex-direction: column;
 }
 .demo-video {
-  width: 90%;
   margin: 4rem 0 5rem 0;
 }
 
@@ -435,6 +434,7 @@ table tr td {
 }
 
 .about-p2 {
+  margin-top: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
