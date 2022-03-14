@@ -2,11 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap");
 @font-face {
   font-family: Avenir-bold;
-  src: url(/AvenirLTStd-Black.otf);
+  src: url(AvenirLTStd-Black.otf);
 }
 @font-face {
   font-family: Avenir-light;
-  src: url(/AvenirLTStd-Book.otf);
+  src: url(AvenirLTStd-Book.otf);
 }
 
 * {
