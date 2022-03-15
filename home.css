@@ -314,7 +314,6 @@ h1 {
   padding: 2rem;
 }
 
-
 .about-container h1 {
   font-family: Avenir-bold;
   font-size: 3rem;
@@ -461,7 +460,6 @@ table tr td {
   text-align: justify center;
 }
 
-
 .about-p2 {
   margin-top: 6rem;
   display: flex;
@@ -512,6 +510,27 @@ table tr td {
 }
 .CloseIcon {
   cursor: pointer;
+}
+
+.popup-content {
+  position: relative;
+  width: 200rem;
+  height: 10rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  pointer-events: auto;
+  background-color: #fff;
+  border-radius: 0.3rem;
+  outline: 0;
+}
+
+.popup-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
 }
 
 .showcase {

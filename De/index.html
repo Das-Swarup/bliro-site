@@ -44,7 +44,7 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-    <script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0070/3223.js" async="async" ></script>
+    <script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0070/3223.js" async="async"></script>
 </head>
 
 <body class="is-preload">
@@ -68,8 +68,8 @@
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 About <span class="sr-only">(current)</span><i class="fa-solid fa-angle-down"></i></a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="#">About Us</a>
-                                <a class="dropdown-item" href="#">Blog</a>    
+                                <a class="dropdown-item" href="./about.html">About Us</a>
+                                <a class="dropdown-item" href="#">Blog</a>
                                 <a class="dropdown-item"
                                     href="https://bliro.notion.site/The-Bliro-Job-Board-17065e23cac244dbbc37ba7e8f18a3c3">Careers</a>
                             </div>
@@ -118,102 +118,17 @@
             <p>Sie sind sich nicht sicher? Buchen Sie ein <a
                     onclick="Calendly.initPopupWidget({url: 'https://calendly.com/bliro/personal-1-1-session-30-min'});return false;"
                     style="color: #D14900; cursor: pointer;">demo</a> mit uns!</p>
-            <!-- <img src="./img/Rectangle 2.png" alt=""> -->
-            <video controls class="demo-video">
-                <source src="../img/Demo Video Short.mp4" type="video/mp4">
-            </video>
         </div>
 
-        <div class="mdc-dialog" style="margin-top: 2em; z-index: 100000">
-            <div class="mdc-dialog__container">
-                <div class="mdc-dialog__surface" role="alertdialog" aria-modal="true" aria-labelledby="my-dialog-title"
-                    aria-describedby="my-dialog-content" style="padding: 5% 10% 5% 10%;">
-                    <!-- Dialog Title -->
-                    <h2 class="mdc-dialog__title" id="my-dialog-title" style="padding-left: 0; padding-right: 0;">
-                        <!--
-                        -->Looking forward to showing bliro to you!
-                        <!--
-                    -->
-                    </h2>
-                    <div class="mdc-dialog__content" id="my-dialog-content" style="padding-right: 0; padding-left: 0;">
-                        <p>
-                            Plase leave us with your contact details so we can reach out to you to schedule an
-                            appointment.
-                        </p>
-
-                        <form method="POST" class="contact-form">
-                            <!-- NAME -->
-                            <label class="mdc-text-field mdc-text-field--outlined mdc-text-field--no-label"
-                                style="align-self: center; width: 100%; padding: 0;">
-                                <span class="mdc-notched-outline">
-                                    <span class="mdc-notched-outline__leading"></span>
-                                    <span class="mdc-notched-outline__trailing"></span>
-                                </span>
-                                <input class="mdc-text-field__input signup_name" type="text" aria-label="Label"
-                                    placeholder="Name" id="dialog-input-name">
-                            </label>
-                            <!-- NAME -->
-                            <label class="mdc-text-field mdc-text-field--outlined mdc-text-field--no-label"
-                                style="align-self: center; width: 100%; padding: 0;">
-                                <span class="mdc-notched-outline">
-                                    <span class="mdc-notched-outline__leading"></span>
-                                    <span class="mdc-notched-outline__trailing"></span>
-                                </span>
-                                <input class="mdc-text-field__input signup_email" type="text" aria-label="Label"
-                                    placeholder="E-Mail" id="dialog-input-mail">
-                            </label>
-
-                            <label
-                                class="mdc-text-field mdc-text-field--outlined mdc-text-field--textarea mdc-text-field--no-label"
-                                style="align-self: center; width: 100%; padding: 0;">
-                                <span class="mdc-notched-outline">
-                                    <span class="mdc-notched-outline__leading"></span>
-                                    <span class="mdc-notched-outline__trailing"></span>
-                                </span>
-                                <span class="mdc-text-field__resizer">
-                                    <textarea class="mdc-text-field__input signup_message" rows="3" cols="20"
-                                        aria-label="Label" placeholder="Anything else?"
-                                        style="margin: 0; padding: 16px 16px 16px 16px"
-                                        id="dialog-input-message"></textarea>
-                                </span>
-                            </label>
-                            <div class="mdc-form-field">
-                                <div class="mdc-checkbox">
-                                    <input type="checkbox" class="mdc-checkbox__native-control"
-                                        id="sign-up-consent-checkbox" />
-                                    <div class="mdc-checkbox__background">
-                                        <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
-                                            <path class="mdc-checkbox__checkmark-path" fill="none"
-                                                d="M1.73,12.91 8.1,19.28 22.79,4.59" />
-                                        </svg>
-                                        <div class="mdc-checkbox__mixedmark"></div>
-                                    </div>
-                                    <div class="mdc-checkbox__ripple"></div>
-                                </div>
-                                <label for="sign-up-consent-checkbox">
-                                    Yes, I agree that bliro.io can store my contact details
-                                    and contact me for the purpose of this demo.</label>
-                            </div>
-
-                            <!-- DIALOG ACTIONS -->
-                            <div class="mdc-dialog__actions">
-                                <button type="button" class="mdc-button mdc-dialog__button"
-                                    data-mdc-dialog-action="cancel">
-                                    <div class="mdc-button__ripple"></div>
-                                    <span class="mdc-button__label">Discard</span>
-                                </button>
-                                <button type="submit" class="mdc-button mdc-dialog__button signup_beta disabled"
-                                    data-mdc-dialog-action="discard" id="modal-sign-up-button">
-                                    <div class="mdc-button__ripple"></div>
-                                    <span class="mdc-button__label">Sign Up</span>
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class="mdc-dialog__scrim"></div>
+        <!-- DEMO VIDEO -->
+        <script src="https://fast.wistia.com/embed/medias/u8w5jbpcwj.jsonp" async></script>
+        <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+        <div class="wistia_responsive_padding demo-video" style="padding:56.25% 0 0 0;position:relative;">
+            <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><span
+                    class="wistia_embed wistia_async_u8w5jbpcwj popover=true popoverAnimateThumbnail=false videoFoam=true"
+                    style="display:inline-block;height:100%;position:relative;width:100%">&nbsp;</span></div>
         </div>
+        <!-- DEMO VIDEO -->
 
         <div style="text-align: center">
             <h3 style="font-family: Avenir-bold;font-size: 3rem;">Wir werden unterstützt von:</h3>
@@ -237,42 +152,64 @@
             </div>
         </div>
 
+        <div class="advantages">
+            <div class="advantage">
+                <h1>4 hours</h1>
+                <p>saved per user</p>
+            </div>
+            <div class="advantage">
+                <h1>65%</h1>
+                <p>more activities tracked vs. manual updates</p>
+            </div>
+            <div class="advantage">
+                <h1>35%</h1>
+                <p>more acurate data vs. manual updates</p>
+            </div>
+        </div>
+
         <div class="feature-container">
             <h1>So haben Sie Kundengespräche noch nie erlebt</h1>
             <div class="feature">
                 <div class="feature-desc">
-                    <i class="bi bi-file-earmark-text" style="font-size: 6rem;"></i>
+                    <!-- <i class="bi bi-file-earmark-text" style="font-size: 6rem;"></i> -->
                     <h3 style="font-family: Avenir-bold;">Weniger Dokumentationsaufwand</h3>
-                    <p>Bliro läuft auf Mac- und Windows-Computern und erkennt Kundentermine automatisch. Es stellt eine
-                        Verbindung zu Ihrem Kalender und Ihrem Customer Relationship Management-System her, um den
-                        Termin automatisch zu dokumentieren, einschließlich wichtiger Metadaten. Kein Copy und Paste
-                        zwischen verschiedenen Lösungen mehr.</p>
+                    <p>Bliro dokumentiert für Sie Ihre Kundengespräche. Alle relevanten Felder werden automatisch
+                        ausgefüllt und mit Ihrem CRM-System synchronisiert.</p>
                 </div>
 
-                <img src="../img/placeholder.png" alt="">
+                <img style="width: 45%;" src="../img/documentfaster.png" alt="">
 
             </div>
             <div class="feature">
-                <img src="../img/placeholder.png" alt="">
+                <img src="../img/documentmore.png" alt="">
                 <div class="feature-desc">
-                    <i class="bi bi-trophy" style="font-size: 6rem;"></i>
-                    <h3 style="font-family: Avenir-bold;">Hohere Datenqualität</h3>
-                    <p>Benutzer können Notizen zu den Ereignissen des Anrufs hinzufügen. Entweder über die
-                        Sprachdiktierfunktion oder über die Smart Notes von bliro.</p>
+                    <!-- <i class="bi bi-trophy" style="font-size: 6rem;"></i> -->
+                    <h3 style="font-family: Avenir-bold;">Mehr dokumentieren</h3>
+                    <p>Sie können Notizen dazu hinzufügen, was während des Anrufs passiert ist. Entweder mit der
+                        Sprachdiktierfunktion von bliro oder mit Smart Note von bliro.</p>
                 </div>
 
             </div>
             <div class="feature">
                 <div class="feature-desc">
-                    <i class="bi bi-people" style="font-size: 6rem;"></i>
+                    <!-- <i class="bi bi-people" style="font-size: 6rem;"></i> -->
                     <h3 style="font-family: Avenir-bold;">Befähigen Sie ihr Team</h3>
-                    <p>Bliro verbindet alle Ihre Systeme miteinander - bevor Daten verloren gehen. Kundenbesprechungen
-                        werden in Ihrem Hauptdokumentationstool protokolliert und Notizen aus dem Kundengespräch können
-                        direkt von Bliro aus mit relevanten Teams und Kollegen geteilt werden. </p>
+                    <p>Oft beinhalten Kundenmeetings nicht nur kommerzielle Informationen. Teilen Sie Produktfeedback
+                        direkt mit dem Produktmanagement und Wettbewerbserkenntnisse mit dem Wettbewerbsteam. </p>
                 </div>
 
-                <img src="../img/placeholder.png" alt="">
+                <img src="../img/enableeveryone.png" alt="">
 
+            </div>
+        </div>
+
+        <div class="end-banner">
+            <h1>Steigern Sie die Produktivität Ihres Kundenerfolgs</h1>
+            <div class="banner-button">
+                <a href="./pricing.html"><button class="primary-button">Get started with Bliro</button></a>
+                <button style="width: 15.623rem;" class="secondary-button"
+                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/bliro/personal-1-1-session-30-min'});return false;">Schedule
+                    a demo</button>
             </div>
         </div>
 

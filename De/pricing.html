@@ -45,11 +45,13 @@
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
     <script src="https://kit.fontawesome.com/77c4f3153d.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0070/3223.js" async="async" ></script>
+    <script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0070/3223.js" async="async"></script>
 </head>
 
 <body class="is-preload">
     <div class="container">
+
+        <!-- HEADER -->
 
         <div id="header" class="header">
             <a href="./index.html"><img class="logo" src="../img/bliro_logo_large.svg" alt="" width="100"
@@ -105,32 +107,42 @@
             </nav>
         </div>
 
+        <!-- HEADER -->
+
         <div class="home-text">
             <h1>Preise</h1>
             <br></br>
             <h4>Bliro kostenlos nutzen.</h4>
-            <p class="p1">Keine Kredikarte benötigt. Set-up dauert weniger als 2 Minuten.</p>
+            <p style="color: grey;" class="p1">Keine Kredikarte benötigt. Set-up dauert weniger als 2 Minuten.</p>
         </div>
 
         <div class="pricing-table">
             <table style="border: none;" class="">
                 <tbody>
                     <tr>
-                        <!-- overlay-top -->
-                        <div class="overlay" id="overlay">
-                            <div class="popup">
-                                <div onclick="CloseModal()" class="CloseIcon">&#10006;</div>
-                                <h3 style="font-family: Avenir-bold;">Bliro for Mac & Windows</h3>
-                                <div class="buttons">
-                                    <button type="button" class="secondary-button"><i class="bi bi-apple"
-                                            style="font-size:1.6rem"></i> Download for Mac</button>
-                                    <button type="button" class="secondary-button" style="width: fit-content;"><i
-                                            class="bi bi-windows" style="font-size:1.6rem"></i> Download for
-                                        Windows</button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="popup-content">
+
+                                    <div class="popup-body">
+                                        <h3 style="font-family: Avenir-bold;font-size: 1.3rem;">Bliro for Mac & Windows
+                                        </h3>
+                                        <div class="buttons">
+                                            <a href="../sample.txt" download="sample"><button type="button"
+                                                    class="secondary-button"><i class="bi bi-apple"
+                                                        style="font-size:1.6rem"></i> Download for Mac</button></a>
+                                            <a href="../sample.txt" download="sample"><button type="button"
+                                                    class="secondary-button" style="width: fit-content;"><i
+                                                        class="bi bi-windows" style="font-size:1.6rem"></i> Download for
+                                                    Windows</button></a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- overlay-top -->
+                        <!-- Modal -->
 
                         <td style="font-family: Avenir-bold; font-size: 20px;">Bliro’s Preise
                             <p><br></p>
@@ -161,10 +173,11 @@
                     </tr>
                     <tr>
                         <td></td>
-                        <td><button class="secondary-button" onclick="OpenModal()"
-                                ondblclick="CloseModal()">Download</button></td>
-                        <td style="border: 3px solid #D14900;border-bottom: none;border-top: none;"><button
-                                class="secondary-button-buy">Start free trial</button></td>
+                        <td><button class="secondary-button" data-toggle="modal"
+                                data-target="#exampleModalCenter">Download</button></td>
+                        <td style="border: 3px solid #D14900;border-bottom: none;border-top: none;"><a
+                                href="https://buy.stripe.com/test_eVabMN0OjaGI40waEE"><button
+                                class="secondary-button-buy">Start free trial</button></a></td>
                         <td><button class="secondary-button"
                                 onclick="Calendly.initPopupWidget({url: 'https://calendly.com/bliro/talk-to-sales'});return false;">Vertrieb
                                 kontaktieren
@@ -212,11 +225,12 @@
                     </tr>
                     <tr>
                         <td></td>
-                        <td><button class="secondary-button" onclick="OpenModal()"
-                                ondblclick="CloseModal()">Download</button></td>
-                        <td style="border: 3px solid #D14900;border-top: none;"><button
+                        <td><button class="secondary-button" data-toggle="modal"
+                                data-target="#exampleModalCenter">Download</button></td>
+                        <td style="border: 3px solid #D14900;border-top: none;"><a
+                            href="https://buy.stripe.com/test_eVabMN0OjaGI40waEE"><button
                                 class="secondary-button-buy">Start
-                                free trial</button></td>
+                                free trial</button></a></td>
                         <td><button class="secondary-button"
                                 onclick="Calendly.initPopupWidget({url: 'https://calendly.com/bliro/talk-to-sales'});return false;">Vertrieb
                                 kontaktieren
@@ -224,21 +238,6 @@
                     </tr>
                 </tbody>
             </table>
-            <!-- overlay-bottom -->
-            <div class="overlay-bottom" id="overlay-bottom">
-                <div class="popup">
-                    <div onclick="CloseModal()" class="CloseIcon">&#10006;</div>
-                    <h3 style="font-family: Avenir-bold;">Bliro for Mac & Windows</h3>
-                    <div class="buttons">
-                        <button type="button" class="secondary-button"><i class="bi bi-apple"
-                                style="font-size:1.6rem"></i> Download for Mac</button>
-                        <button type="button" class="secondary-button" style="width: fit-content;"><i
-                                class="bi bi-windows" style="font-size:1.6rem"></i> Download for
-                            Windows</button>
-                    </div>
-                </div>
-            </div>
-            <!-- overlay-bottom -->
         </div>
 
         <h1 class="faq-header">Frequently asked questions</h1>
