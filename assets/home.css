@@ -28,6 +28,10 @@ li {
   margin-top: 1rem;
 }
 
+.dropdown-item:hover{
+  color: #161e31;
+}
+
 .logo {
   margin-top: 1rem;
   position: absolute;
@@ -163,7 +167,7 @@ logo closer
 }
 
 
-p size 20 all
+/* p size 20 all */
 
 
 
@@ -372,16 +376,19 @@ p size 20 all
 }
 
 .about img {
-  width: 50%;
+  width: 35%;
+  height: fit-content;
 }
 
 .about {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   text-align: justify center;
   margin-top: 3rem;
   margin-bottom: 3rem;
+  transform: scale(0.9);
 }
 
 .slide {
@@ -494,12 +501,14 @@ table tr td {
 .privacy-container,
 .privacy-container-de,
 .imprint-container {
+  margin: auto;
   margin-top: 5.25rem;
   padding-left: 0.625rem;
   padding-right: 0.625rem;
   text-align: justify center;
   align-items: center;
   justify-content: center;
+  width: 80%;
 }
 
 .privacy-container-de,
