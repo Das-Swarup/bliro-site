@@ -1,0 +1,177 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap");
+@font-face {
+  font-family: Avenir-bold;
+  src: url(AvenirLTStd-Black.otf);
+}
+@font-face {
+  font-family: Avenir-light;
+  src: url(AvenirLTStd-Book.otf);
+}
+
+* {
+  font-family: Avenir-light;
+}
+
+html text {
+  color: #161e31;
+}
+
+html a {
+  color: #161e31;
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+  margin-top: 1.8rem;
+}
+
+.logo {
+  margin-top: 0.8rem;
+  position: absolute;
+  left: auto;
+  right: auto;
+}
+
+.home-text p,
+h1 {
+  text-align: center;
+}
+
+.home-text h1,
+.sitetitle,
+.about-p1 h1 {
+  margin-top: 0.625rem;
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: Avenir-bold;
+}
+
+.home-text p {
+  font-size: 1.125rem;
+  max-width: 80%;
+  text-align: justify center;
+}
+
+.p1 {
+  font-size: 1.25rem;
+  text-align: justify;
+}
+
+.mainheading {
+  margin-top: 5rem;
+}
+
+.sitetitle {
+  margin-bottom: 5rem;
+}
+
+.lead {
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width=2560px) {
+  .p1 {
+    padding-left: 16rem;
+    padding-right: 16rem;
+  }
+}
+
+
+.nav-button {
+  color: aliceblue;
+  font-size: 1.25rem;
+  width: 12.5rem;
+  height: 3.438rem;
+  border: 0.125rem solid white;
+
+  /* Bliro Orange */
+
+  background: rgba(22, 30, 49, 1);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+}
+
+.end-element {
+  font-size: 1.125rem;
+}
+
+.end-element:hover {
+  color: #a1410d;
+  text-decoration: none;
+}
+
+
+.showcase {
+  margin-top: 4rem;
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+.showcase:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.showcase img {
+  width: 90%;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.showcase-desc {
+  display: flex;
+  flex-direction: column;
+}
+
+.showcase-desc p {
+  margin-top: 1.2rem;
+  color: #525252;
+}
+
+.blog-title {
+  font-family: Avenir-bold;
+}
+
+.blog-title:hover {
+  cursor: pointer;
+  color: darkblue;
+  text-decoration: underline;
+}
+
+.blogs {
+  margin-top: 4rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+  padding: 1.25rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 50%;
+}
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}

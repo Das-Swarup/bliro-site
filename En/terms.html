@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-90SKGHNRBT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-90SKGHNRBT');
+    </script>
+    <title>bliro.io</title>
+    <meta charset="utf-8" />
+    <meta name="robots" content="index, follow">
+    <meta name="description"
+        content="Bliro develops a software solution for privacy preserving communication mining in B2B sales.">
+    <meta property="og:title" content="Bliro -- Privacy Preserving Communication Mining" />
+    <meta property="og:image" content="https://bliro.io/assets/img/bliro_banner.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bliro.io/en" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="icon" href="../assets/img/favicon.ico">
+    <link rel="canonical" href="https://bliro.io/en" />
+    <link rel="stylesheet" href="../home.css" />
+    <link rel="stylesheet" href="../assets/css/logo-carousel.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./contact_form.js"></script>
+    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+</head>
+
+<body class="is-preload">
+    <div class="container">
+
+        <!-- HEADER -->
+        <div id="header" class="header">
+            <a href="../index.html"><img class="logo" src="../img/bliro_logo_large.svg" alt="" width="100"
+                    height="100"></a>
+            <nav class="navbar navbar-expand-sm navbar-light justify-content-end">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+                    <ul class="navbar-nav text-right">
+                        <li class="nav-item dropdown">
+
+                            <a style="font-weight: 700;color:#161E31;font-family: Avenir-bold;font-size: 1.5rem"
+                                class="nav-link mr-4" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                About <span class="sr-only">(current)</span><i class="fa-solid fa-angle-down"></i></a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="./about.html">About Us</a>
+                                <a class="dropdown-item" href="./blog/index.html">Blog</a>
+                                <a class="dropdown-item"
+                                    href="https://bliro.notion.site/The-Bliro-Job-Board-17065e23cac244dbbc37ba7e8f18a3c3">Careers</a>
+                            </div>
+                        </li>
+                        <li class="nav-item" style="margin-right: 0.1rem;">
+                            <a style="font-weight: 700;color:#161E31;font-family: Avenir-bold;font-size: 1.5rem"
+                                class="nav-link mr-4" href="./pricing.html">Pricing</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a style="font-weight: 700;color:#161E31;font-family: Avenir-bold;font-size: 1.5rem"
+                                class="nav-link mr-4" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                EN
+                                <i class="fa-solid fa-angle-down"></i></a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="./privacy.html">English | EN</a>
+                                <a class="dropdown-item" href="../De/privacy.html">German | DE</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown" style="margin-top: 1.2rem;">
+                            <a style="font-weight: 700;color:#161E31;font-family: Avenir-bold;font-size: 1.5rem;"
+                                class="nav-link" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown"><button type="button" class="nav-button">Download
+                                    Bliro</button></a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="../Bliro-Desktop-0.1.7-arm64.dmg" download="Bliro-Desktop-0.1.7-arm64.dmg">Apple M1</a>
+                                <a class="dropdown-item" href="../Bliro-Desktop-0.1.7.dmg" download="Bliro-Desktop-0.1.7.dmg">Apple Intel</a>
+                                <a class="dropdown-item" href="../Bliro-Desktop Setup 0.1.7.exe" download="Bliro-Desktop Setup 0.1.7.exe">Windows</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- HEADER -->
+
+        <div class="privacy-container">
+            <h2>Terms of Services</h2>
+
+            <p>Thank you for using bliro’s services (as defined below), a cloud-based digital meeting assistant that
+                allows users to document their customer meetings and share information in different tools.</p>
+
+            <p>To be eligible to register for a bliro account and use bliro’s services, you must review and accept the
+                terms of this Agreement by clicking on the “I accept” button or other mechanism provided. By providing
+                the data requested in the signup mask and clicking “I accept”, you make us an offer to enter into the
+                Agreement based on these Terms. Before clicking “I accept”, you can review and modify the data entered
+                in the signup mask by clicking on the relevant data field and making your modifications. We will confirm
+                receipt of this offer by e-mail. This e-mail is not acceptance of your offer; we will accept the offer
+                separately either by e-mail or by granting you access to the Bliro Services. Please review these terms
+                carefully. By accepting these terms, you agree to these terms and conditions with Bliro GbR (“Bliro”).
+                If you do not agree to be bound by these terms, you should not click the “I accept” button.
+            </p>
+
+            <p>In this agreement, “you,” “your” and “Customer” will refer to you. If you are registering for a bliro
+                account or using the bliro Services on behalf of an entity or other organization, you are agreeing to
+                these Terms for that entity or organization and representing to bliro that you have the authority to
+                bind that entity or organization to these Terms (and, in which case, the terms “you”, “your” and
+                “Customer” will refer to that entity or organization). The exception to this is if that organization has
+                a separate contract with bliro covering one or more accounts and use of the Bliro Services, in which
+                case that contract will govern the Bliro Services with respect to those accounts only.
+            </p>
+
+            <h4>1.Certain Definitions</h4>
+            <!-- <p>The data protection declaration of the Bliro GbR is based on the terms used by the European legislator
+                for the adoption of the General Data Protection Regulation (GDPR). Our data protection declaration
+                should be legible and understandable for the general public, as well as our customers and business
+                partners. To ensure this, we would like to first explain the terminology used.</p>
+
+            <p>In this data protection declaration, we use, inter alia, the following terms:</p> -->
+
+            <ul style="list-style: none">
+                <li>
+                    <h4>1.1 The following terms, when used in this Agreement will have the following meanings:
+                    </h4>
+                    <p>“Confidential Information” means any information or data disclosed by either party that is marked
+                        or otherwise designated as confidential or proprietary or that should otherwise be reasonably
+                        understood to be confidential in light of the nature of the information and the circumstances
+                        surrounding disclosure. However, “Confidential Information” will not include any information
+                        which a) is in the public domain through no fault of receiving party; b) was properly known to
+                        receiving party, without restriction, prior to disclosure by the disclosing party; c) was
+                        properly disclosed to receiving party, without restriction, by another person with the legal
+                        authority to do so; or d) is independently developed by the receiving party without use of or
+                        reference to the disclosing party’s Confidential Information.
+                    </p>
+                    <p>“Bliro Services” means the cloud-based digital assistant platform, programs, functions and
+                        services provided by Bliro to you (including documentation and technical support that is made
+                        available by Bliro to you as applicable pursuant to your order in connection with such
+                        services), and subsequent updates or upgrades of any of the foregoing made generally available
+                        by Bliro.
+                    </p>
+                    <p>“Customer Content” means content and other material supplied or made available to Bliro by you
+                        (or, if you are an agency, your clients for which you are an agency of record) through the use
+                        of or access to the Bliro Services.</p>
+                    <p>“Documentation” means the printed and digital instructions, on-line help files, technical
+                        documentation and user manuals made available by Bliro for the Bliro Services.</p>
+                </li>
+            </ul>
+
+            <h4>2. Changes to the Bliro Services</h4>
+            <p>You acknowledge that Bliro may change, deprecate or republish Bliro Services or features of the Bliro
+                Services from time to time. Although Bliro endeavors to avoid changes to the Bliro that are not
+                backwards compatible, if any such changes become necessary Bliro will notify you at least thirty (30)
+                days prior to Bliro’s implementation of any such incompatible changes to the Bliro Service of which it
+                becomes aware.
+            </p>
+
+            <h4>3. Bliro Services</h4>
+            <ul>
+                <li>
+                    <h4>3.1 Provision of Services</h4>
+                    <p>Subject to the terms and conditions of this Agreement, Bliro will make the
+                        Bliro available to you pursuant to this Agreement, and hereby grants you a non-exclusive right
+                        to access and use the Bliro Services to manage Customer Content, If Customer is an agency, such
+                        rights may, as agreed by the parties, be restricted to access and use on behalf of only certain
+                        Customer clients. Bliro will provide the Bliro Services with an availability of 95% on annual
+                        average.</p>
+                </li>
+                <li>
+                    <h4>3.2 Restrictions</h4>
+                    <p>The rights granted herein are subject to the following restrictions (the “License Restrictions”):
+                    </p>
+                    <ul>
+                        <li>
+                            <p>a) You will not reverse engineer, decompile, disassemble, modify, create derivative works
+                                of or otherwise create, attempt to create or derive, or permit or assist any third party
+                                to create or derive, the source code underlying the Bliro Services; except that Customer
+                                may exceptionally decompile, disassemble or reverse engineer the Service to the extent
+                                this is required for the contractual operation of the Service, including correction of
+                                defects, or to obtain information required to make the Service interoperable with an
+                                independently developed piece of software (each a “Permitted Purpose”), but only if such
+                                contractual use, correction of defects or required information could not be obtained
+                                from Bliro upon request. Any decompiling, disassembling or reverse engineering may be
+                                done only to the extent absolutely required for the respective Permitted Purpose, and
+                                any information gathered from such actions may only be used for such Permitted Purpose,
+                                and in particular not shared with any third party except to the extent required to
+                                achieve the Permitted Purpose. Under no circumstances may the information gathered from
+                                such actions be used to develop a competing software, product or service.
+                            </p>
+                        </li>
+                        <li>
+                            <p>b) Except for Customer Content that uses the Bliro Services, you will not transfer,
+                                distribute, resell, lease, license, or assign Bliro Services or otherwise offer the
+                                Bliro Services on a standalone basis, and, without limiting the foregoing, if Customer
+                                is an agency, you will only use the Bliro Services on behalf of your clients of which
+                                you are an agency of record and which have authorized you to use the Bliro Services on
+                                behalf of such clients within the scope of your other bona fide agency responsibilities
+                                for such clients;</p>
+                        </li>
+                        <li>
+                            <p>c) You will not (nor will it permit any third party to) use Bliro Services in any manner
+                                that violates any term of this Agreement;</p>
+                        </li>
+                        <li>
+                            <p>d) You will not otherwise use the Bliro Services outside the scope expressly permitted
+                                hereunder;
+                            </p>
+                        </li>
+                        <li>
+                            <p>e) You will ensure that you and your users do not use temporary email addresses or share
+                                user accounts among multiple individuals or disclose their access credentials to any
+                                third party. You will, and will ensure that your users, immediately report to Bliro any
+                                breaches or suspected breaches of the aforementioned provision and any cases of actual
+                                or suspected unauthorized third party access, and you hereby permit Bliro to deactivate
+                                the accounts of any users that violate this Agreement.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>3.3 Account Registration; Other Customer Responsibilities
+                    </h4>
+                    <ul>
+                        <li>
+                            <p>a) To use the Bliro Services, you will be asked to create an account. As part of the
+                                account creation process, you will be asked to provide your email address and create a
+                                password. Until you apply for an account, your access to the Bliro Services will be
+                                limited to what is available to the general public. When registering an account, you
+                                must provide true, accurate, current and complete information about yourself as
+                                requested during the account creation process. You must also keep that information true,
+                                accurate, current and complete after you create your account.
+                            </p>
+                        </li>
+                        <li>
+                            <p>b) You will (i) be responsible for all use of the Bliro Services and Documentation under
+                                your account (whether or not authorized), (ii) be solely responsible for the accuracy,
+                                quality, integrity and legality of Customer Content , (iii) use commercially reasonable
+                                efforts to prevent unauthorized access to or use of the Bliro Services and Documentation
+                                and notify Bliro promptly of any such unauthorized access or use, and (iv) be
+                                responsible for obtaining and maintaining any equipment and ancillary services needed to
+                                connect to, access or otherwise use the Bliro Services, including as set forth in the
+                                Documentation. You will be solely responsible for your failure to maintain such
+                                equipment, software and services and Bliro will have no liability for such failure. With
+                                your permission (which may be by email or other reasonable means), Bliro may log into
+                                user accounts in order to maintain or debug the Bliro Services.
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h4>4. Fees</h4>
+            <ul>
+                <li>
+                    <h4>4.1</h4>
+                    <p>Fees. You agree to pay the service fees, subscription fees, additional usage fees and other fees
+                        set forth in Bliro’s standard schedule of fees - as published on our website www.bliro.io and
+                        amended from time to time - in effect upon conclusion of the Agreement, or any other order forms
+                        for the Bliro Services ordered by you and accepted in writing by Bliro. Except as otherwise
+                        mutually agreed upon in writing or expressly set forth herein, a) fees are quoted and payable in
+                        Euro and b) payment obligations are non-cancelable and non-pro-ratable for partial months, and
+                        fees paid are non-refundable.
+                    </p>
+                </li>
+                <li>
+                    <h4>4.2</h4>
+                    <p>Payment. Except where expressly agreed otherwise, payments are due monthly in advance. Subject to
+                        certain credit requirements as determined by Bliro, Bliro may let you pay amounts due under
+                        these
+                        Terms in arrears. If Bliro lets you do that, you will make all of the payments due hereunder
+                        within
+                        thirty (30) days of the date of the invoice. If you are overdue on any payment and fail to pay
+                        within ten (10) business days of a written notice of your overdue payment, then Bliro may assess
+                        and
+                        you must pay the statutory interest on overdue payments and/or Bliro may suspend your account
+                        until
+                        you pay the amount you are overdue plus the interest. Bliro’s other statutory and contractual
+                        rights
+                        and remedies remain unaffected.</p>
+                </li>
+                <li>
+                    <h4>4.3</h4>
+                    <p>Suspension. If your use of the Bliro Services exceeds the amounts prepaid by you or if you fail
+                        to pay any amounts due by you, Bliro may suspend your account without prior notice to you. Bliro
+                        will have no liability for any damage, liabilities, losses (including any loss of data or
+                        profits) or any other consequences that you may incur in connection with any suspension of your
+                        account pursuant to this section.</p>
+                </li>
+                <li>
+                    <h4>4.4</h4>
+                    <p>Net of Taxes. All applicable use, sales and other similar taxes and government charges will be
+                        payable by you. You will not withhold any taxes from any amounts due to Bliro, except to the
+                        extent required under mandatory local law. In the event Customer is thusly obliged to withhold
+                        taxes, Customer will inform Bliro accordingly in writing as soon as the obligation to withhold
+                        taxes becomes known, and will assist Bliro at no charge in obtaining any mitigations, exemptions
+                        and/or refunds as may be available under any applicable law, including any double taxation
+                        treaties. In particular, Customer will provide Bliro, at no charge and in a timely manner, with
+                        any and all information, document or confirmation required for Bliro to avail itself of any
+                        exemptions, mitigations or reductions of any such withholding tax under any applicable law,
+                        including any double taxation treaties.
+                    </p>
+                </li>
+            </ul>
+
+            <h4>5. Proprietary Rights, Confidentiality, & Processing of Personal Data</h4>
+            <ul>
+                <li>
+                    <h4>5.1 Bliro’s Ownership Rights</h4>
+                    <p> As between the parties, Bliro exclusively owns all right, title and interest in and to the Bliro
+                        Services. Except for the express rights granted hereunder, Bliro reserves all rights, title and
+                        interests in and to the Bliro Services and Bliro’s Confidential Information.
+                    </p>
+                </li>
+                <li>
+                    <h4>5.2 Bliro Mark</h4>
+                    <p>Bliro hereby grants you a non-transferable, non-sublicensable, non-exclusive license during the
+                        term of this Agreement to display the trade names, trademarks, service marks, logos, domain
+                        names of Bliro (each, a “Bliro Mark”) for the purpose of promoting or advertising that you use
+                        the Bliro Services. In using Bliro Marks, you may not: a) display a Bliro Mark in any manner
+                        that implies a relationship or affiliation with, sponsorship, or endorsement by Bliro; b) use
+                        Bliro Marks to disparage Bliro or its products or services; or c) display a Bliro Mark on a site
+                        that violates any law or regulation. Furthermore, Bliro may modify any Bliro Marks at any time,
+                        and upon notice, you will use only the updated Bliro Marks. Other than as permitted in this
+                        Section, you may not use any Bliro Marks without prior written consent. All use of the Bliro
+                        Marks will be subject to any trademark usage guidelines that Bliro may provide from time to
+                        time, and Customer will conduct its business in a professional manner that reflects favorably on
+                        the goodwill and reputation of Bliro.</p>
+                </li>
+                <li>
+                    <h4>5.3 Feedback</h4>
+                    <p>Customer may from time to time provide Bliro suggestions or comments for enhancements or
+                        improvements, new features or functionality or other feedback (“Feedback”) with respect to the
+                        Bliro Services. Bliro will have full discretion to determine whether or not to proceed with the
+                        development of any requested enhancements, new features or functionality. Bliro will have the
+                        full, unencumbered right, without any obligation to compensate or reimburse Customer, to use,
+                        incorporate and otherwise fully exercise and exploit any such Feedback in connection with its
+                        products and services.
+                    </p>
+                </li>
+                <li>
+                    <h4>5.4 Customer Content</h4>
+                    <p>As between the parties, the Customer Content will be owned by you (or, if Customer is an agency,
+                        Customer’s client(s)). You hereby grant to Bliro a non-exclusive, worldwide license to copy,
+                        distribute and use Customer Content only in connection with providing the Bliro Services.</p>
+                </li>
+                <li>
+                    <h4>5.5 Confidentiality</h4>
+                    <p> Each party agrees that it will use the Confidential Information of the other party solely in
+                        accordance with the provisions of this Agreement and it will not disclose, or permit to be
+                        disclosed, the same directly or indirectly, to any third party without the other party’s prior
+                        written consent, except as otherwise permitted hereunder. However, either party may disclose
+                        Confidential Information to its employees, officers, directors, attorneys, auditors, financial
+                        advisors and other representatives who have a need to know and are legally bound to keep such
+                        information confidential by confidentiality obligations consistent with those of this Agreement;
+                        and as required by law (in which case the receiving party will provide the disclosing party with
+                        prior written notification thereof, will provide the disclosing party with the opportunity to
+                        contest such disclosure, and will use its reasonable efforts to minimize such disclosure to the
+                        extent permitted by applicable law. Neither party will disclose the terms of this Agreement to
+                        any third party other than advisors bound by a professional secret (such as lawyers and tax
+                        advisors), except that either party may confidentially disclose such terms to actual or
+                        potential lenders, investors or acquirers. Each party agrees to exercise due care in protecting
+                        the Confidential Information from unauthorized use and disclosure. In the event of actual or
+                        threatened breach of the provisions of this Section or the License Restrictions, the
+                        non-breaching party will be entitled to seek immediate injunctive and other equitable relief,
+                        without waiving any other rights or remedies available to it. Each party will promptly notify
+                        the other in writing if it becomes aware of any violations of the confidentiality obligations
+                        set forth in this Agreement.</p>
+                </li>
+                <li>
+                    <h4>5.6 Aggregated Information</h4>
+                    <p> Notwithstanding anything to the contrary, Bliro shall have the right to aggregate, collect and
+                        analyze data and other information relating to the provision, use and performance of the Bliro
+                        Services (all in a way that does not permit identification of any individual) and shall be free
+                        (during and after the term hereof) to a) use such data and other information to develop,
+                        improve, standardize, or enhance the Bliro Services and other Bliro offerings, and b) disclose
+                        such data and other information solely in an aggregated and anonymized format that does not
+                        identify you or any individual.
+                    </p>
+                </li>
+                <li>
+                    <h4>5.7</h4>
+                    <p> Bliro, headquartered in Munich, Germany, follows the strict German and European data protection
+                        rules. When processing personal data, Bliro acts in accordance with the General Data Protection
+                        Regulation (GDPR). Therefore, by accepting these Terms of Service, you enter into the following
+                        data processing agreement, which allows us to process personal data according to the GDPR:
+                        Processing in Accordance with Article 28 <a style="color: orangered;"
+                            href="https://info.getciara.com/hubfs/July%202021%20(v1.2)%20-%20Ciara%20Data%20Processing%20incl%20TOM.pdf">General
+                            Data Protection Regulation (GDPR).</a></p>
+                </li>
+            </ul>
+
+            <h4>6. Warranties and Disclaimers</h4>
+            <ul>
+                <li>
+                    <h4>6.1 Bliro</h4>
+                    <p> To the extent any Bliro Services are provided free of charge, Bliro makes no warranties
+                        whatsoever, in accordance with applicable law. To the extent Bliro provides the Bliro Services
+                        against a fee, Bliro warrants that it will, consistent with prevailing industry standards,
+                        maintain the Bliro Services in a manner which minimizes errors in the Bliro Services and perform
+                        the Bliro Services in a professional and workmanlike manner. The Bliro Services shall be deemed
+                        defective or erroneous or otherwise non-conforming only in the event and to the extent they (i)
+                        materially deviate from the agreed Documentation, which is exhaustive, or (ii) fall short of the
+                        annual average availability set forth above.
+                    </p>
+                </li>
+                <li>
+                    <h4>6.2 Customer</h4>
+                    <p> You warrant that you have the necessary rights, licenses, consents, permissions, waivers and
+                        releases to use, make available and distribute the Customer Content in connection with the Bliro
+                        Services as contemplated herein. Without limiting the foregoing, if Customer is an agency, it
+                        warrants that it has been granted the necessary rights from its client(s) to use the Bliro
+                        Services and Customer Content related to such client(s) on such client(s)’ behalf.
+                    </p>
+                </li>
+                <li>
+                    <h4>6.3 Remedy</h4>
+                    <p> In the event of any breach of Bliro’s warranty above, Bliro will correct the relevant defect of
+                        a non-conforming Bliro Service in accordance with the agreed specifications at no additional
+                        charge to the Customer. In the event that Bliro is unable to correct a non-conforming Bliro
+                        Service within a reasonable time period to be set by Customer (which must allow for at least
+                        three attempts at rectification), Customer may claim a reduction in fees proportionate to the
+                        defect (and claim a refund of any pre-paid fees exceeding the accordingly adjusted total) or
+                        terminate the concerned Bliro Service(s) immediately by written notice, and shall be entitled to
+                        receive a refund of any pre-paid Fees for unused Bliro Service access remaining during the term
+                        of the concerned Bliro Service(s). Save for damage claims subject to the limitations of
+                        liability Section below, the foregoing remedy is Customer’s sole remedy in the event of a breach
+                        of the limited warranty above.
+                    </p>
+                </li>
+                <li>
+                    <h4>6.4 Customer’s Cooperation</h4>
+                    <p> Bliro’s obligations for breach of warranty as set forth above in this Section are conditional
+                        upon Customer promptly notifying Bliro of such breach in writing, and providing Bliro with
+                        sufficient evidence of such non-conformity to enable Bliro to reproduce and/or verify the same.
+                    </p>
+                </li>
+                <li>
+                    <h4>6.5 Beta services</h4>
+                    <p>From time to time, you may have the option to participate in a program with Bliro where you get
+                        to use alpha or beta services, products, features or documentation (collectively, “Beta
+                        services”) offered by Bliro free of charge for testing purposes. Any use of the beta services in
+                        conjunction with actual data and/or in a productive setting, is at your sole risk. These beta
+                        services are not generally available and may contain bugs, errors, defects or harmful
+                        components. You or Bliro may terminate your access to the beta services at any time.
+                    </p>
+                </li>
+            </ul>
+
+            <h4>7. Indemnification</h4>
+            <p>
+                You will defend, indemnify and hold Bliro and its affiliates harmless against any actual or threatened
+                claim, loss, liability, proceeding, governmental investigation or enforcement action arising out of or
+                relating to your activities under these Terms or your acts or omissions in connection with the provision
+                of any Customer Content (“Claim”). Bliro and its affiliates will cooperate as fully as reasonably
+                required in the defense of any Claim, at your expense. Bliro reserves the right, at your expense, to
+                retain separate counsel for themselves in connection with any Claim or, if you have not responded
+                reasonably to the applicable Claim, to assume the exclusive defense and control of any Claim in which
+                you are a named party and that is otherwise subject to indemnification under this Section (to the extent
+                permitted under applicable law, in particular the applicable laws, rules or code of civil procedure).
+                You will pay all costs, reasonable attorneys’ fees and any settlement amounts or damages awarded against
+                Bliro in connection with any Claim. You will also be liable to Bliro for any costs and attorneys’ fees
+                Bliro incurs to successfully establish or enforce Bliro’s right to indemnification under this Section.
+            </p>
+
+            <h4>8. Limitation of Liability</h4>
+            <ul>
+                <li>
+                    <h4>8.1</h4>
+                    <p>Notwithstanding the provisions that follow, to the extent Bliro provides the Bliro Services free
+                        of charge, it is liable only for damages caused intentionally or with gross negligence, in
+                        accordance with statutory law.
+                    </p>
+                </li>
+                <li>
+                    <h4>8.2</h4>
+                    <p>Bliro’s liability is unlimited for damages caused intentionally or with gross negligence,
+                        personal injury and death, for breaches of a guarantee (which must be expressly designated as
+                        such in order to be a guarantee in the legal sense) and under the German Product Liability Act.
+                    </p>
+                </li>
+                <li>
+                    <h4>8.3</h4>
+                    <p>Except in the cases of unlimited liability stated above in this Section, Bliro’s liability in the
+                        event of a breach of a Cardinal Duty with simple negligence is limited to damages that are
+                        typical for cloud services agreements and foreseeable upon conclusion of the Agreement (“Typical
+                        and Foreseeable Damages”). A “Cardinal Duty” for the purpose of this Agreement is a duty the
+                        compliance with which makes the achievement of the purpose of the Agreement possible in the
+                        first place and on the compliance with which the other Party may therefore generally rely. Any
+                        other liability for simple negligence is excluded.
+                    </p>
+                </li>
+                <li>
+                    <h4>8.4</h4>
+                    <p>The amount of Typical and Foreseeable Damages is limited to the amounts Customer paid to Bliro in
+                        the twelve (12) months immediately preceding the incident creating the specific liability.
+                    </p>
+                </li>
+                <li>
+                    <h4>8.5</h4>
+                    <p>To the extent Bliro is responsible for any loss of data pursuant to the provisions above, Bliro’s
+                        liability is further limited to the amount that would be necessary to restore the lost data if
+                        regular backups had been made at least monthly.
+
+                    </p>
+                </li>
+                <li>
+                    <h4>8.6</h4>
+                    <p>Bliro’s no-fault strict liability for initial defects under Sec. 536a (1) of the German Civil
+                        Code is excluded
+                    </p>
+                </li>
+                <li>
+                    <h4>8.7</h4>
+                    <p>To the extent that Bliro’s affiliates, employees or directors are held liable in connection with
+                        the Agreement, the exclusions and limitations of liability in this Section shall apply to such
+                        liability.
+
+                    </p>
+                </li>
+            </ul>
+
+            <h4>9. Termination and Suspension</h4>
+            <ul>
+                <li>
+                    <h4>9.1 Term</h4>
+                    <p>The term of this Agreement will commence on the date these Terms are accepted by you and continue
+                        until your account is terminated as set forth below.</p>
+                </li>
+                <li>
+                    <h4>9.2 Termination and Suspension</h4>
+                    <p>You may terminate your account at any time by sending an email to Bliro customer support
+                        (hello@bliro.io). Bliro may terminate your account at any time with six (6) week’s notice;
+                        provided that to the extent you have pre-paid any fees for a specific time period, such
+                        termination for convenience will be effective no earlier than at the end of such pre-paid
+                        period. Bliro furthermore may terminate or suspend your account in the event you commit any
+                        material breach of any provision of these Terms and fail to fix that breach within five (5) days
+                        after written notice of that breach. Bliro may also terminate or suspend your account
+                        immediately for cause if: a) you violate (or give Bliro reason to believe you have violated) any
+                        applicable law; b) there is reason to believe the traffic created from your use of the Bliro
+                        Services or your use of the Bliro Services is fraudulent or negatively impacting the operating
+                        capability of Bliro Services; c) Bliro determines, in its sole discretion, that providing the
+                        Bliro Services is prohibited by law, or it has become impractical or unfeasible for any legal or
+                        regulatory reason to provide the Bliro Services; or d) subject to applicable law, upon your
+                        liquidation, commencement of dissolution proceedings, disposal of your assets or change of
+                        control, a failure to continue business, assignment for the benefit of creditors, or if you
+                        become the subject of bankruptcy or similar proceeding. Either Party’s statutory right to
+                        terminate this Agreement for good cause remains unaffected. If Bliro suspends your account,
+                        Bliro will notify you accordingly. Note that no refund will be provided in the event of any
+                        suspension or termination of your account for your breach.
+                    </p>
+                </li>
+                <li>
+                    <h4>9.3 Survival</h4>
+                    <p> Upon termination of this Agreement all rights and obligations will immediately terminate except
+                        that any terms or conditions that by their nature should survive such termination will survive,
+                        including the License Restrictions and terms and conditions relating to proprietary rights and
+                        confidentiality, disclaimers, indemnification, limitations of liability and termination and the
+                        general provisions below. If Customer terminates for Bliro’s breach pursuant to the provisions
+                        above, Bliro shall reimburse any unused pre-paid fees.
+                    </p>
+                </li>
+            </ul>
+
+            <h4>10. General</h4>
+            <ul>
+                <li>
+                    <h4>10.1 Export Controls</h4>
+                    <p>The Bliro Services, including any software Bliro provides in connection with the Bliro Services,
+                        may be subject to applicable export control laws and economic sanctions regulations. In
+                        receiving this software or the Bliro Services, you agree to comply strictly with all domestic
+                        and international export laws and economic sanctions regulations as they apply to this software
+                        and the Bliro Services, and to the extent consistent with these Terms, to obtain any necessary
+                        license or other authorization to export, re-export, or transfer such software or other aspects
+                        of the Bliro Services. These laws include restrictions on destinations, users and end use.
+                        Without limitation, you may not transfer any such software or other aspect of the Bliro Service
+                        without any required government authorization to any entity on a government exclusion list
+                        (e.g., the U.S. Department of Commerce’s List of Denied Persons, Entity, or Unverified List, and
+                        the Treasury Department’s List of Specially Designated Nationals and Consolidated Sanctions
+                        List). You represent that you are not on a U.S. government, European Union or other applicable
+                        exclusion list or under the control of or an agent for any entity on such a list, and you
+                        further warrant that you will immediately discontinue use of Bliro’s software and the Bliro
+                        Service if you become placed on any such list or under the control of or an agent for any entity
+                        placed on such a list.</p>
+                </li>
+                <li>
+                    <h4>10.2 Publicity</h4>
+                    <p>You agree that Bliro may refer to your name and trademarks in Bliro’s marketing materials and
+                        website; however, Bliro will not use your name or trademarks in any other publicity (e.g., press
+                        releases, customer references and case studies) without your prior written consent (which may be
+                        by email).</p>
+                </li>
+                <li>
+                    <h4>10.3 Assignment; Delegation</h4>
+                    <p>Neither party hereto may assign or otherwise transfer this Agreement, in whole or in part,
+                        without the other party’s prior written consent, except that either party may assign this
+                        Agreement without consent to a successor to all or substantially all of its assets or business
+                        related to this Agreement. In addition, you agree that Bliro may have any of its obligations
+                        performed through an affiliate of Bliro, provided that Bliro will remain responsible for its
+                        obligations hereunder and will be liable for such affiliate’s performance as if it were Bliro.
+                        Bliro may assign receivables under this Agreement for purposes of debt collection and financing
+                        arrangements. Any attempted assignment, delegation, or transfer by either party in violation
+                        hereof will be null and void. Subject to the foregoing, this Agreement will be binding on the
+                        parties and their successors and assigns.</p>
+                </li>
+                <li>
+                    <h4>10.4 Waiver</h4>
+                    <p>No waiver of any rights hereunder will be effective unless assented to in writing by both
+                        parties. This also applies for any waiver of the written form requirement. Any such waiver will
+                        be only to the specific provision and under the specific circumstances for which it was given,
+                        and will not apply with respect to any repeated or continued violation of the same provision or
+                        any other provision. Failure or delay by either party to enforce any provision of this Agreement
+                        will not be deemed a waiver of future enforcement of that or any other provision.</p>
+                </li>
+                <li>
+                    <h4>10.5 Amendment</h4>
+                    <p>Bliro may amend or modify this Agreement – with the exceptions of the Parties’ main rights and
+                        obligations – from time to time to the extent required to comply with changes in applicable
+                        statute and/or case law, or for similarly compelling reasons, in which case the new Agreement
+                        will supersede prior versions. Bliro will notify you via e-mail not less than 30 days prior to
+                        the effective date of any such amendment or modification and will inform you about the intended
+                        amendments or modifications. If you do not object to the amendment or modification within 30
+                        days from the sending of such notice, such non-objection may be relied upon by Bliro as your
+                        consent to such amendment. Bliro will inform you about your right to object and the consequences
+                        of non-objection in such notice. Subject to the foregoing, no amendment or modification to this
+                        Agreement will be effective unless assented to in writing by both parties. This also applies for
+                        any waiver of the written form requirement.</p>
+                </li>
+                <li>
+                    <h4>10.6 Relationship</h4>
+                    <p>Nothing contained herein will in any way constitute any association, partnership, agency,
+                        employment or joint venture between the parties hereto, or be construed to evidence the
+                        intention of the parties to establish any such relationship. Neither party will have the
+                        authority to obligate or bind the other in any manner, and nothing herein contained will give
+                        rise or is intended to give rise to any rights of any kind to any third parties.
+                    </p>
+                </li>
+                <li>
+                    <h4>10.7 Unenforceability</h4>
+                    <p>If a court of competent jurisdiction determines that any provision of this Agreement is invalid,
+                        illegal, or otherwise unenforceable, the Parties will replace such provision in good faith by a
+                        provision coming as close as possible to the stated intention of the parties, while the
+                        remainder of this Agreement will remain in full force and effect and bind the parties according
+                        to its terms.
+                    </p>
+                </li>
+                <li>
+                    <h4>10.8 Governing Law</h4>
+                    <p>This Agreement will be governed by the laws of the Federal Republic of Germany, exclusive of its
+                        rules governing choice of law and conflict of laws, and all disputes arising out of the
+                        Agreement will be subject to the exclusive jurisdiction and venue of the courts of Berlin,
+                        Germany, and the parties hereby consent to the personal jurisdiction of these courts. This
+                        Agreement will not be governed by the United Nations Convention on Contracts for the
+                        International Sale of Goods (“CISG”).</p>
+                </li>
+                <li>
+                    <h4>10.9 Notices</h4>
+                    <p>Any notice required or permitted to be given hereunder will be given in writing by personal
+                        delivery, certified mail, return receipt requested, or by overnight delivery. Notices to you
+                        must be sent to your email or other address as set forth in your account information. Notices to
+                        Bliro must be sent to the following address: Maurice Schweitzer, bliro GbR, Schellingstraße 112,
+                        80798 München, Germany, Attn: Legal.</p>
+                </li>
+                <li>
+                    <h4>10.10 Entire Agreement</h4>
+                    <p>This Agreement comprises the entire agreement between you and Bliro with respect to its subject
+                        matter, and supersedes all prior and contemporaneous proposals, statements, sales materials or
+                        presentations and agreements (oral and written). No oral or written information or advice given
+                        by Bliro, its agents or employees will create a warranty.
+                    </p>
+                </li>
+                <li>
+                    <h4>10.11 Force Majeure</h4>
+                    <p>Neither party will be deemed in breach hereunder for any cessation, interruption or delay in the
+                        performance of its obligations due to causes beyond its reasonable control (“Force Majeure
+                        Event”), including earthquake, flood, or other natural disaster, act of God, labor controversy
+                        (except such incidents concerning only the relevant Party’s personnel), civil disturbance,
+                        terrorism, war (whether or not officially declared), cyber attacks (e.g., denial of service
+                        attacks), or the inability to obtain sufficient supplies, transportation, or other essential
+                        commodity or service required in the conduct of its business, or any change in or the adoption
+                        of any law, regulation, judgment or decree.
+                    </p>
+                </li>
+                <li>
+                    <h4>10.12 Government Terms</h4>
+                    <p>Bliro provides the Bliro Services, including related software and technology, for ultimate
+                        federal government end use solely in accordance with the terms of this Agreement. If you (or any
+                        of your customers) is an agency, department, or other entity of any government, the use,
+                        duplication, reproduction, release, modification, disclosure, or transfer of the Bliro Services,
+                        or any related documentation of any kind, including technical data, software, and manuals, is
+                        restricted by the terms of this Agreement. All other use is prohibited and no rights than those
+                        provided in this Agreement are conferred. The Bliro Services were developed fully at private
+                        expense.
+                    </p>
+                </li>
+                <li>
+                    <h4>10.13 Interpretation</h4>
+                    <p> For purposes hereof, “including” means “including without limitation”. All dates and times set
+                        forth in this Agreement or any related document are in relation to Greenwich Mean Time (GMT),
+                        unless otherwise specified.
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+        <footer class="footer">
+            <a class="end-element"
+                href="https://bliro.notion.site/The-Bliro-Job-Board-17065e23cac244dbbc37ba7e8f18a3c3">Careers</a>
+            <a class="end-element" href="mailto:hello@bliro.io?subject=Get in Touch">Contact Us</a>
+            <a class="end-element" href="./imprint.html">Imprint</a>
+            <a class="end-element" href="./terms.html">Terms of Service</a>
+            <a class="end-element" href="./privacy.html">Privacy Policy</a>
+        </footer>
+
+    </div>
+</body>
+
+</html>
