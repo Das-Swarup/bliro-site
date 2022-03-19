@@ -33,11 +33,11 @@ li {
 }
 
 .logo {
-  margin-top: 1rem;
+  margin-top: 0.6rem;
   position: absolute;
   left: auto;
   right: auto;
-  transform: scale(0.7);
+  transform: scale(0.9);
   cursor: pointer;
 }
 
@@ -60,10 +60,10 @@ h1 {
 
 .home-text h1{
   margin-top: 0.1rem;
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: 700;
   font-family: Avenir-bold;
-  width: 80%;
+  width: 90%;
 }
 
 
@@ -77,7 +77,7 @@ h1 {
 }
 
 .home-text p {
-  font-size: 0.9rem;
+  font-size: 1.25rem;
   max-width: 80%;
   text-align: justify center;
 }
@@ -87,9 +87,6 @@ h1 {
   text-align: justify;
   line-height: 0.7;
 }
-
-make closer p1
-logo closer
 
 .mainheading {
   margin-top: 5rem;
@@ -101,10 +98,10 @@ logo closer
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-size: 0.8rem;
+  font-size: 1.25rem;
 }
 .demo-video {
-  padding: 3.125rem;
+  padding: 2.125rem;
   align-items: center;
   justify-content: center;
 }
@@ -113,9 +110,9 @@ logo closer
   margin-top: 1rem;
   margin-bottom: 1.25rem;
   color: aliceblue;
-  font-size: 1rem;
-  width: 12.625rem;
-  height: 3.55rem;
+  font-size: 1.5rem;
+  width: 19.625rem;
+  height: 4.25rem;
   border: 0.125rem solid white;
 
   /* Bliro Orange */
@@ -266,7 +263,7 @@ logo closer
   grid-template-columns: repeat(3, 1fr);
   background: #fff9f5;
   z-index: 1000;
-  height: 10.75rem;
+  height: 16.75rem;
 }
 
 .advantage {
@@ -301,7 +298,7 @@ logo closer
 
 .advantage h1,
 .end-banner h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-family: Avenir-bold;
   color: rgba(209, 73, 0, 0.932);
 }
