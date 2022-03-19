@@ -76,15 +76,18 @@ h1 {
   width: 80%;
 }
 
-.home-text p {
+
+.p1 {
   font-size: 1.25rem;
   max-width: 80%;
   text-align: justify center;
+  line-height: 0.7;
 }
 
-.p1 {
-  font-size: 1.5rem;
-  text-align: justify;
+.p2{
+  font-size: 1.1rem;
+  max-width: 80%;
+  text-align: justify center;
   line-height: 0.7;
 }
 
@@ -137,7 +140,7 @@ h1 {
 .nav-button {
   color: aliceblue;
   font-size: 1rem;
-  width: 9.5rem;
+  width: 10.5rem;
   height: 3rem;
   border: 0.125rem solid white;
 
