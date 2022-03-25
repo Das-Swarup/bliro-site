@@ -68,12 +68,12 @@ h1 {
 }
 
 .home-text h1 {
-  margin-top: -0.5vw;
+  margin-top: -1vw;
   margin-bottom: 0.5vw;
   font-size: 4vw;
   font-weight: 700;
   font-family: Avenir-bold;
-  width: 80%;
+  width: 70%;
 }
 
 .sitetitle,
@@ -89,7 +89,7 @@ h1 {
   font-size: 1vw;
   max-width: 80%;
   text-align: justify center;
-  line-height: 1.2vw;
+  line-height: 1vw;
 }
 
 .p2 {
@@ -315,7 +315,7 @@ h1 {
 
 .column {
   flex: 25%;
-  max-width: 25%;
+  max-width: 20%;
 }
 
 .slide {
@@ -371,13 +371,13 @@ h1 {
 
 .advantage h1,
 .end-banner h1 {
-  font-size: 3vw;
+  font-size: 2.8vw;
   font-family: Avenir-bold;
   color: rgba(209, 73, 0, 0.932);
 }
 
 .end-banner h1 {
-  width: 60%;
+  width: 50%;
 }
 
 .advantage p {
@@ -434,7 +434,7 @@ h1 {
 
 .feature-container h1 {
   font-family: Avenir-bold;
-  font-size: 3vw;
+  font-size: 3.2vw;
   font-weight: 700;
   text-align: center;
 }
@@ -972,9 +972,9 @@ table tr td {
     margin-top: 1rem;
     margin-bottom: 1rem;
     color: aliceblue;
-    font-size: 1rem;
-    width: 12.625rem;
-    height: 3.25rem;
+    font-size: 0.8vw;
+    width: 10.625vw;
+    height: 3vw;
     border: 0.125rem solid white;
 
     /* Bliro Orange */
@@ -1008,9 +1008,9 @@ table tr td {
     margin-top: 1rem;
     margin-bottom: 1.25rem;
     color: aliceblue;
-    font-size: 0.8rem;
-    width: 10rem;
-    height: 3.25rem;
+    font-size: 0.8vw;
+    width: 9vw;
+    height: 3.25vw;
     border: 0.125rem solid white;
 
     /* Bliro Orange */
@@ -1035,9 +1035,9 @@ table tr td {
   .secondary-button-end {
     margin-bottom: 1.25rem;
     color: black;
-    font-size: 0.8rem;
-    width: 10rem;
-    height: 3.25rem;
+    font-size: 0.8vw;
+    width: 9vw;
+    height: 3.25vw;
     border: 0.125rem solid rgba(209, 73, 0, 0.932);
 
     /* Bliro Orange */
