@@ -73,7 +73,6 @@ h1 {
   font-size: 4rem;
   font-weight: 700;
   font-family: Avenir-bold;
- 
 }
 
 .sitetitle,
@@ -86,17 +85,17 @@ h1 {
 }
 
 .p1 {
-  font-size: 1vw;
+  font-size: 1rem;
   max-width: 80%;
   text-align: justify center;
   line-height: 1;
 }
 
 .p2 {
-  font-size: 1vw;
+  font-size: 1rem;
   max-width: 80%;
   text-align: justify center;
-  line-height: 1.2;
+  line-height: 1;
 }
 
 .mainheading {
@@ -293,7 +292,9 @@ h1 {
 .primary-button:focus,
 .secondary-button:focus,
 .secondary-button-buy:focus,
-.inactive-button:focus {
+.inactive-button:focus,
+.primary-button-end:focus,
+.secondary-button-end:focus {
   outline: 0;
 }
 
@@ -672,8 +673,8 @@ table tr td {
   padding-bottom: 0.6vw;
 }
 
-.price-tagline{
-  margin-top:-1.25rem;
+.price-tagline {
+  margin-top: -1.25rem;
 }
 
 .price {
@@ -771,7 +772,12 @@ table tr td {
 }
 
 .about-p2 img {
-  margin-top: 4rem;
+  margin-top: 2rem;
+}
+
+.about-p2 p{
+  line-height: 0.9;
+  font-size: 0.9rem;
 }
 
 .overlay {
@@ -1200,7 +1206,7 @@ table tr td {
 
   /* HOMEPAGE */
 
-  .pricing-table{
+  .pricing-table {
     width: 30%;
     transform: scale(0.5);
     margin-left: -1rem;
@@ -1208,17 +1214,16 @@ table tr td {
     margin-bottom: -10rem;
   }
 
-  .price-title{
+  .price-title {
     font-size: 1.5rem;
   }
-  .price-name{
+  .price-name {
     font-size: 1.3rem;
   }
 
-  .price{
+  .price {
     font-size: 1.5rem;
   }
-
 }
 
 @media screen and (max-width: 400px) {
@@ -1427,6 +1432,7 @@ table tr td {
     margin-left: auto;
   }
 
+
   /* SUPPORTED BY */
 
   .sponsor h3 {
@@ -1545,7 +1551,7 @@ table tr td {
     font-family: Avenir-bold;
     font-size: 1rem;
   }
-  
+
   .price-name {
     font-family: Avenir-bold;
     font-size: 0.9rem;
@@ -1627,6 +1633,7 @@ table tr td {
 /* MOBILE VIEW */
 
 @media screen and (max-width: 460px) {
+  
   /* HOMEPAGE */
   .logo {
     margin-right: 12.3rem;
@@ -1831,6 +1838,14 @@ table tr td {
     margin-left: auto;
   }
 
+  .imprint-container{
+    transform: scale(0.8);
+    margin-top: -10rem;
+  }
+
+  .imprint h1{
+    text-align: left;
+
   /* SUPPORTED BY */
 
   .sponsor h3 {
@@ -1904,15 +1919,15 @@ table tr td {
     width: 100%;
   }
 
-  .price-tagline{
+  .price-tagline {
     margin-top: -3rem;
   }
 
-  .faq-header{
+  .faq-header {
     font-size: 2rem;
   }
 
-  .faq-container{
+  .faq-container {
     margin-top: -4rem;
     transform: scale(0.6);
     width: 170%;
@@ -2209,7 +2224,7 @@ table tr td {
 
   /* PRICING */
 
-  .pricing-table{
+  .pricing-table {
     width: 30%;
     transform: scale(0.4);
     margin-left: -2.5rem;
@@ -2217,26 +2232,26 @@ table tr td {
     margin-bottom: -15rem;
   }
 
-  .price-title{
+  .price-title {
     font-size: 1.5rem;
   }
-  .price-name{
+  .price-name {
     font-size: 1.3rem;
   }
 
-  .price{
+  .price {
     font-size: 1.5rem;
   }
 
-  .price-tagline{
+  .price-tagline {
     margin-top: -3rem;
   }
 
-  .faq-header{
+  .faq-header {
     font-size: 2rem;
   }
 
-  .faq-container{
+  .faq-container {
     transform: scale(0.45);
     width: 200%;
     margin-left: -11.5rem;
