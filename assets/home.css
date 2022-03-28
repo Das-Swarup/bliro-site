@@ -69,7 +69,7 @@ h1 {
 
 .home-text h1 {
   margin-top: -1rem;
-  margin-bottom: -0.5rem;
+  margin-bottom: 2rem;
   font-size: 4rem;
   font-weight: 700;
   font-family: Avenir-bold;
@@ -103,7 +103,7 @@ h1 {
 }
 
 .section-2 {
-  margin-top: 0.5rem;
+  margin-top: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -137,9 +137,9 @@ h1 {
   margin-top: 1rem;
   margin-bottom: 1.25rem;
   color: aliceblue;
-  font-size: 1.2rem;
-  width: 14rem;
-  height: 4rem;
+  font-size: 1.2vw;
+  width: 14vw;
+  height: 4vw;
   border: 0.125rem solid white;
 
   /* Bliro Orange */
@@ -223,9 +223,9 @@ h1 {
 .secondary-button-end {
   margin-bottom: 1.25rem;
   color: black;
-  font-size: 1.125rem;
-  width: 14rem;
-  height: 4rem;
+  font-size: 1.2vw;
+  width: 14vw;
+  height: 4vw;
   border: 0.125rem solid rgba(209, 73, 0, 0.932);
 
   /* Bliro Orange */
@@ -418,7 +418,7 @@ h1 {
 
 .feature-container h1 {
   font-family: Avenir-bold;
-  font-size: 3.2vw;
+  font-size: 3.2rem;
   font-weight: 700;
   text-align: center;
 }
