@@ -300,35 +300,31 @@ h1 {
 
 /* BUTTONS */
 
+.sponsor-table{
+  display: flex;
+  flex-direction: column;
+}
+
 .sponsor h3 {
   font-family: Avenir-bold;
   font-size: 3vw;
 }
 
 .row {
-  display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 0 0.25rem;
-  margin-top: -4rem;
+  
 }
 
 .column {
-  flex: 25%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
   max-width: 20%;
-}
-
-.slide {
-  margin-left: 0rem;
-  margin-top: 5rem;
-  vertical-align: middle;
-  width: 30%;
-}
-
-.slide img {
-  height: auto;
-  width: fit-content;
+  flex-direction: row;
+  padding: 0.5rem;
+  margin: auto;
 }
 
 .advantages {
@@ -429,33 +425,6 @@ h1 {
   margin-top: 6rem;
   width: 80%;
 }
-
-/* SUPPORTED BY */
-.tumv {
-  margin-top: 4rem;
-}
-
-.exist {
-  margin-bottom: -2.5rem;
-}
-
-.ionos {
-  margin-bottom: 1.6rem;
-}
-
-.euen {
-  width: 50%;
-}
-
-.esf {
-  width: 60%;
-  margin-top: 7.5rem;
-}
-
-.bmwi {
-  margin-bottom: 1rem;
-}
-/* SUPPORTED BY */
 
 .feature-desc {
   display: flex;
@@ -826,19 +795,19 @@ table tr td {
     margin-top: 2rem;
   }
   .home-text h1 {
-    margin-top: 0.2rem;
+    margin-top: -1rem;
     margin-bottom: 1.5rem;
     font-size: 2rem;
     font-weight: 700;
     font-family: Avenir-bold;
     width: 100%;
-    line-height: 1.4;
+    line-height: 1;
   }
   .p1 {
     font-size: 0.7rem;
     max-width: 80%;
     text-align: justify center;
-    line-height: 1.8;
+    line-height: 1.2;
   }
 
   .p2 {
@@ -1017,48 +986,31 @@ table tr td {
 
   /* SUPPORTED BY */
 
+  .sponsor-table{
+    margin-top: -4rem;
+  }
+
   .sponsor h3 {
     font-size: 2rem;
     margin-bottom: 3rem;
   }
 
-  .slide {
-    margin-left: 2.3rem;
-    width: 60%;
-    margin-top: 4rem;
-    margin-left: 1.3rem;
-    margin-right: 1rem;
+  .row {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
   }
-
-  .slide img {
-    height: auto;
-    width: fit-content;
+  
+  .column {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 30%;
+    flex-direction: row;
+    padding: 0rem;
+    margin: auto;
   }
-
-  .tumv {
-    margin-top: 4rem;
-  }
-
-  .exist {
-    margin-top: 0rem;
-  }
-
-  .ionos {
-    margin-top: 4rem;
-  }
-
-  .euen {
-    width: 50%;
-    margin-top: 2rem;
-  }
-
-  .esf {
-  }
-
-  .bmwi {
-    margin-bottom: -3rem;
-  }
-  /* SUPPORTED BY */
 
   .feature-desc {
     display: flex;
@@ -1126,8 +1078,8 @@ table tr td {
     margin-top: 2rem;
   }
   .home-text h1 {
-    margin-top: 0.2rem;
-    margin-bottom: 1.2rem;
+    margin-top: -0.2rem;
+    margin-bottom: 0.8rem;
     font-size: 2rem;
     font-weight: 700;
     font-family: Avenir-bold;
@@ -1138,7 +1090,7 @@ table tr td {
     font-size: 0.6rem;
     max-width: 80%;
     text-align: justify center;
-    line-height: 1.8;
+    line-height: 0.5;
   }
 
   .p2 {
@@ -1494,6 +1446,7 @@ table tr td {
   }
   .home-text h1 {
     margin-top: 0.1rem;
+    margin-bottom: 1.2rem;
     font-size: 3rem;
     font-weight: 700;
     font-family: Avenir-bold;
@@ -1503,7 +1456,7 @@ table tr td {
     font-size: 1.1rem;
     max-width: 80%;
     text-align: justify center;
-    line-height: 0.7;
+    line-height: 1.2;
   }
 
   .p2 {
@@ -1512,6 +1465,11 @@ table tr td {
     text-align: justify center;
     line-height: 1.2;
   }
+
+  .section-2{
+    margin-top: 1.2rem;
+  }
+
   .advantage h1,
   .end-banner h1 {
     font-size: 2.6rem;
@@ -1642,19 +1600,19 @@ table tr td {
     margin-top: 2rem;
   }
   .home-text h1 {
-    margin-top: 0.2rem;
-    margin-bottom: 1.5rem;
+    margin-top: -0.4rem;
+    margin-bottom: 0.8rem;
     font-size: 2rem;
     font-weight: 700;
     font-family: Avenir-bold;
     width: 100%;
-    line-height: 1.4;
+    line-height: 1.2;
   }
   .p1 {
     font-size: 0.7rem;
     max-width: 80%;
     text-align: justify center;
-    line-height: 1.8;
+    line-height: 1.2;
   }
 
   .p2 {
@@ -1838,10 +1796,10 @@ table tr td {
 
   .imprint h1{
     text-align: left;
-
+  }
   /* SUPPORTED BY */
 
-  .sponsor h3 {
+  .sponsor h3{
     font-size: 2rem;
     margin-bottom: 3rem;
   }
@@ -1859,29 +1817,6 @@ table tr td {
     width: fit-content;
   }
 
-  .tumv {
-    margin-top: 4rem;
-  }
-
-  .exist {
-    margin-top: 0rem;
-  }
-
-  .ionos {
-    margin-top: 4rem;
-  }
-
-  .euen {
-    width: 50%;
-    margin-top: 2rem;
-  }
-
-  .esf {
-  }
-
-  .bmwi {
-    margin-bottom: -3rem;
-  }
   /* SUPPORTED BY */
 
   .feature-desc {
@@ -1947,19 +1882,19 @@ table tr td {
     margin-top: 2rem;
   }
   .home-text h1 {
-    margin-top: 0.2rem;
-    margin-bottom: 1.2rem;
+    margin-top: -0.2rem;
+    margin-bottom: 0.8rem;
     font-size: 2rem;
     font-weight: 700;
     font-family: Avenir-bold;
     width: 100%;
-    line-height: 1.4;
+    line-height: 1;
   }
   .p1 {
-    font-size: 0.6rem;
+    font-size: 0.65rem;
     max-width: 80%;
     text-align: justify center;
-    line-height: 1.8;
+    line-height: 1.2;
   }
 
   .p2 {
@@ -2160,29 +2095,6 @@ table tr td {
     width: fit-content;
   }
 
-  .tumv {
-    margin-top: 4rem;
-  }
-
-  .exist {
-    margin-top: 0rem;
-  }
-
-  .ionos {
-    margin-top: 4rem;
-  }
-
-  .euen {
-    width: 50%;
-    margin-top: 2rem;
-  }
-
-  .esf {
-  }
-
-  .bmwi {
-    margin-bottom: -3rem;
-  }
   /* SUPPORTED BY */
 
   .feature-desc {
