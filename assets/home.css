@@ -85,14 +85,14 @@ h1 {
 }
 
 .p1 {
-  font-size: 1rem;
+  font-size: 1.2rem;
   max-width: 80%;
   text-align: justify center;
   line-height: 1;
 }
 
 .p2 {
-  font-size: 1rem;
+  font-size: 1.1rem;
   max-width: 80%;
   text-align: justify center;
   line-height: 1;
@@ -138,8 +138,8 @@ h1 {
   margin-bottom: 1.25rem;
   color: aliceblue;
   font-size: 1.2rem;
-  width: 16rem;
-  height: 4.25rem;
+  width: 14rem;
+  height: 4rem;
   border: 0.125rem solid white;
 
   /* Bliro Orange */
@@ -224,8 +224,8 @@ h1 {
   margin-bottom: 1.25rem;
   color: black;
   font-size: 1.125rem;
-  width: 16rem;
-  height: 4.25rem;
+  width: 14rem;
+  height: 4rem;
   border: 0.125rem solid rgba(209, 73, 0, 0.932);
 
   /* Bliro Orange */
@@ -301,7 +301,7 @@ h1 {
 /* BUTTONS */
 
 .sponsor-table {
-  margin-top: 4rem;
+  margin-top: 2vw;
   display: flex;
   flex-direction: column;
 }
@@ -334,12 +334,17 @@ h1 {
 }
 
 .esf {
-  margin-top: 1.5rem;
+  margin-top: 2.1rem;
   margin-right: 0.8rem;
 }
 
 .exist{
   margin-top:-1.5rem;
+}
+
+.euen{
+  max-width: 10vw;
+  margin-top: 1.2rem;
 }
 
 .advantages {
@@ -383,7 +388,7 @@ h1 {
 
 .advantage h1,
 .end-banner h1 {
-  font-size: 2.8vw;
+  font-size: 3vw;
   font-family: Avenir-bold;
   color: rgba(209, 73, 0, 0.932);
 }
@@ -436,7 +441,7 @@ h1 {
 }
 
 .slide {
-  width: 80%;
+  width: 12vw;
 }
 
 .feature-desc {
@@ -572,8 +577,8 @@ table tr td {
 .faq-header {
   font-family: Avenir-bold;
   margin-top: 5.625vw;
-  margin-bottom: 2vw;
-  font-size: 2vw;
+  margin-bottom: 0.2vw;
+  font-size: 2rem;
 }
 
 .question {
@@ -1004,7 +1009,7 @@ table tr td {
   }
 
   .sponsor h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 3rem;
   }
 
